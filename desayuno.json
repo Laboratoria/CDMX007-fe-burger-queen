@@ -1,0 +1,45 @@
+{  "desayuno" : [{
+  "platillos": [
+    {
+     "id": "DP-SJ-01",
+     "name": "Sandwich de jamón con queso",
+     "img": "https://sandwich.jpg",
+     "price": "$10.00",
+     "quantity": "1",
+     "ingredients": [
+      {
+       "cebolla": "1",
+       "jitomate": "1",
+       "aguacate": "1",
+       "lechuga": "1",
+       "mostaza": "1",
+       "mayonesa": "1"
+      }
+     ]
+    }
+   ],
+   "bebidas": [
+       {
+        "id": "DB-CA-01",
+        "name": "Café americano",
+        "img": "https://cafeamericano.jpg",
+        "price": "$5.00",
+        "quantity": "1"
+       },
+       {
+        "id": "DB-CL-02",
+        "name": "Café con leche",
+        "img": "https://cafeconleche.jpg",
+        "price": "$7.00",
+        "quantity": "1"
+       },
+       {
+        "id": "DB-JF-01",
+        "name": "Jugo de frutas natural",
+        "img": "https://jugodefrutas.jpg",
+        "price": "$7.00",
+        "quantity": "1"
+       }
+      ]
+}]
+}
