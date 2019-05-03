@@ -7,16 +7,17 @@ Un pequeño restaurante de hamburguesas, que está creciendo, necesita una inter
 Tras una investigación con empleados de locales de comida rápida se descubrió un gran pain en la interacción del empleado y el software que se utiliza para tomar las ordenes.
 
 Algunos de estos pains son:
--Los sistemas no son intuitivos 
--Inconsistencias en la interfaz 
--Las órdenes no se pueden cancelar
--Desactualización de contenido 
--Códigos de color no identificados
+
+- Los sistemas no son intuitivos 
+- Inconsistencias en la interfaz 
+- Las órdenes no se pueden cancelar
+- Desactualización de contenido 
+- Códigos de color no identificados
 
 
 Este proyecto está enfocado en resolver esos pains a través de una interfaz pensada y diseñada para la interacción rápida e intuitiva entre el usuario y el producto.
 
-##Burguer Queen
+## Burguer Queen
 Burque Queen es una cadena de comida 24hrs.
 
 Su propuesta de servicio 24hrs ha tenido muy buena acogida y para seguir creciendo, requieren  un sistema que nos ayude a tomar los pedidos de nuestros clientes.
@@ -28,29 +29,29 @@ y la interacción natural entre el usuario y el producto.
 
 
 
-##Diseño de experiencia de Usuario (UX)/ Prototipo
+## Diseño de experiencia de Usuario (UX)/ Prototipo
 
-![out](https://drive.google.com/file/d/1ckaFeYQDtdV387uMVPZJPEssvJOtfXWr/view)
+![out](assets\aec5fd74165f49babbc4f629aeaa290a.mp4)
 
-##Aspectos Técnicos
+## Aspectos Técnicos
 Herramientas a utilizar:
--Firebase
--Firestore
+- Firebase
+- Firestore
 
 Lenguaje
--Javascript
+- Javascript
 
 Framework:
--React
+- React
 
 Otros Aspectos:
--App orientada a visualización en tablet
--Single Page Application
--Progressive Web App
+- App orientada a visualización en tablet
+- Single Page Application
+- Progressive Web App
 
 
 
-##Equipo de desarrollo
+## Equipo de desarrollo
 - Diseño UX
  Cristal García
 
