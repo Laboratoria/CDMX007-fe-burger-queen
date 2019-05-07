@@ -1,6 +1,24 @@
-.container {
+body {
+  background-color: black;  
+}
+div {
+  display: inline-block;
+  text-decoration: underline;
   text-align: center;
 }
+
 h1{
-  color: red;
+  color: #ffb400;
+  padding-left: 31%;
 }
+
+h2{
+  color:white;
+  padding-left: 31%; 
+}
+
+
+h3{
+  color: white; 
+}
+
