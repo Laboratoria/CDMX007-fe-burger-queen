@@ -1,15 +1,17 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 const Navbar = (props)=>(
     <nav>
     <div className="nav-wrapper">
-      <a href="#" class="brand-logo">{props.title}</a>
+      <NavLink exact to="/" className="brand-logo">{props.title}</NavLink>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Menú</a></li>
-        <li><a href="#">Confirmar Orden</a></li>
-        <li><a href="#">Promociones</a></li>
-        <li><a href="#">Manual</a></li>
+      <li><NavLink exact to="/">Home</NavLink></li>
+        <li><NavLink  to="/login">Login</NavLink></li>
+        <li><NavLink to="/menu">Menú</NavLink></li>
+        <li><NavLink to="/confirm">Confirmar Orden</NavLink></li>
+        <li><NavLink to="promotions">Promociones</NavLink></li>
+        <li><NavLink to="manual">Manual</NavLink></li>
       </ul>
     </div>
   </nav>     

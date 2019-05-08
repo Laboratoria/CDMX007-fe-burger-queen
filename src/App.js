@@ -1,17 +1,33 @@
 import React, {Component} from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
 import Navbar from './components/navbar';
 import Login from './components/login';
+import Menu from './components/menu';
+import Confirm from './components/confirm-order';
+import Manual from './components/manual';
+import Promotions from './components/promotions';
 import './App.css';
 
 
 
+
+//Contiene opciones para pasar props y  render .Falta establecer la ruta por defecto -> (/)
 class App extends Component{
   render(){
     return(
-      <div className="App">
-      <Navbar title="Burguer Queen"/>
-      <Login header="Burguer Queen"/>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar title="Burguer Queen"/>
+              <Route extact path ="/login" render={()=> <Login header="Burguer Queen"/>}/>
+              <Route path ="/menu" component={Menu}/>
+        
+              {/* <Route path ="/menu/" render={()=><Menu/>}/> */}
+              <Route path ="/confirm" component={Confirm}/>
+              <Route path ="/manual" component={Manual}/>
+              <Route path ="/promotions" component={Promotions}/>
+          
       </div>
+      </BrowserRouter>
     )
   }
 }
