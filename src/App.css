@@ -1,24 +1,76 @@
 body {
   background-color: black;  
+  font-family: 'Montserrat', sans-serif;
+
 }
-div {
+#title {
   display: inline-block;
-  text-decoration: underline;
   text-align: center;
+   padding-left: 37%;
+   
+
+}
+
+#line{
+  background-color: orange;
+
+  width:20px;
+height:5px;
+position: relative;
+top: 6%;
+left:3%;
+ 
+
+  
+}
+
+#enter{
+  background-color: orange;
+}
+
+#log{
+  
+  padding-top: 10%;
+  padding-left: 35%;
+
+}
+
+#input-type{
+  display: inline-block;
+  text-align: center;
+  padding-top: 5%;
+  padding-left: 40%;
+}
+
+#input-pa{
+color: rgb(83, 82, 82);
+text-align: center;
+  background-color: gray;
+  border: 15px solid rgb(63, 62, 62);
+ 
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#input-pa:focus{
+  width:100%;
 }
 
 h1{
   color: #ffb400;
   padding-left: 31%;
+  
 }
 
 h2{
   color:white;
   padding-left: 31%; 
+  
 }
 
 
 h3{
   color: white; 
+  
 }
 

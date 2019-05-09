@@ -1,1 +1,11 @@
-<h1>aquí un menu con hamburguesas wuuu</h1>
+import React from 'react';
+
+const Menu = () => {
+    return (
+        <div>
+            <p>Menu</p>
+        </div>
+    );
+};
+
+export default Menu; 
