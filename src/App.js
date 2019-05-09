@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Navbar from './components/navbar';
-import Login from './components/login';
-import Menu from './components/menu';
-import Confirm from './components/confirm-order';
-import Manual from './components/manual';
-import Promotions from './components/promotions';
+import Login from './views/login';
+import Menu from './views/menu';
+import Confirm from './views/confirm-order';
+import Manual from './views/manual';
+import Promotions from './views/promotions';
 import './App.css';
+
 
 
 
@@ -27,6 +28,10 @@ class App extends Component{
               <Route path ="/promotions" component={Promotions}/>
           
       </div>
+
+
+
+
       </BrowserRouter>
     )
   }
