@@ -1,76 +1,135 @@
 body {
-  background-color: black;  
+  background-color: black;
   font-family: 'Montserrat', sans-serif;
-
 }
+
 #title {
   display: inline-block;
   text-align: center;
-   padding-left: 37%;
-   
-
+  padding-left: 37%;
 }
 
-#line{
+#line {
   background-color: orange;
-
-  width:20px;
-height:5px;
-position: relative;
-top: 6%;
-left:3%;
- 
-
-  
+  width: 20px;
+  height: 5px;
+  position: relative;
+  top: 6%;
+  left: 3%;
 }
 
-#enter{
+#enter {
   background-color: orange;
 }
 
-#log{
-  
+#log {
   padding-top: 10%;
   padding-left: 35%;
-
 }
 
-#input-type{
+#input-type {
   display: inline-block;
   text-align: center;
   padding-top: 5%;
   padding-left: 40%;
 }
 
-#input-pa{
-color: rgb(83, 82, 82);
-text-align: center;
+#input-pa {
+  color: rgb(83, 82, 82);
+  text-align: center;
   background-color: gray;
   border: 15px solid rgb(63, 62, 62);
- 
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
-#input-pa:focus{
-  width:100%;
+#input-pa:focus {
+  width: 100%;
 }
 
-h1{
+h1 {
   color: #ffb400;
   padding-left: 31%;
-  
 }
 
-h2{
-  color:white;
-  padding-left: 31%; 
-  
+h2 {
+  color: white;
+  padding-left: 31%;
 }
 
 
-h3{
-  color: white; 
-  
+h3 {
+  color: white;
 }
 
+#navlinks {
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
+#buttons-nav {
+  padding-left: 12%;
+}
+
+
+
+.button {
+  background-color: #353535;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 70px;
+  text-decoration: none;
+  text-orientation: center;
+  border: none;
+  margin: 7px;
+}
+
+#search-input {
+  background-color: #353535;
+  border: none;
+  font-size: 1.5em;
+
+  box-align: center;
+  padding-bottom: 0.7%;
+  margin: 0.1px;
+}
+
+#search-box {
+  background-color: gray;
+  color: black;
+  font-size: 15px;
+}
+
+a.active {
+  padding-right: 5%;
+  color: white;
+}
+
+a:hover {
+  border-bottom: solid 2px #ffb400;
+}
+
+
+#logout.active {
+  color: gray;
+  padding-left: 40%;
+}
+
+h4 {
+  color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 44%;
+}
+
+
+
+#search-icon{
+    color: black;
+    background-color: gray;
+    font-size: 2em;
+    width: 4%;
+    padding-bottom: 0.5%;
+  }

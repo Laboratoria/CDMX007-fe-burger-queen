@@ -21,8 +21,8 @@ const Home = () => {
 <div id = "input-type">  
     <input type="password" id="input-pa" placeholder= "INTRODUCE TU CLAVE"name="password"></input> 
 
-    <button class="btn btn-primary" id= "enter"><i class="fas fa-check"></i>entrar</button>
-            
+    <button onClick = {console.log('You just clicked a recipe name.')} class="btn btn-primary" id= "enter"><i class= "fas fa-check"></i>entrar</button>
+    
             </div>
            
             </div>
