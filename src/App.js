@@ -18,9 +18,9 @@ class App extends Component{
       <BrowserRouter>
         <div className="App">
           <Navbar title="Burguer Queen"/>
-              <Route extact path ="/login" render={()=> <Login header="Burguer Queen"/>}/>
+              {/* <Route extact path ="/login" render={()=> <Login header="Burguer Queen"/>}/> */}
+              <Route extact path ="/login" component={Login}/>
               <Route path ="/menu" component={Menu}/>
-        
               {/* <Route path ="/menu/" render={()=><Menu/>}/> */}
               <Route path ="/confirm" component={Confirm}/>
               <Route path ="/manual" component={Manual}/>

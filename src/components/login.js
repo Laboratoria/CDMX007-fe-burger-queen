@@ -1,11 +1,13 @@
 import React from 'react';
 import './login.css'
 
-const Login = (props)=>(
+const Login = ()=>(
     <div className="container">
         <p className="App-header">
-     {props.header}
+     {/* {props.header} */}
+     Burguer 
         </p>
+        <p className="App-header-Two"> Queen</p>
     </div>
 );
 
