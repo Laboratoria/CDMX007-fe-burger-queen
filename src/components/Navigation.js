@@ -7,7 +7,6 @@ const Navigation = () => {
             <NavLink to = "">PROMOS</NavLink>
             <NavLink to = "" >Nueva Orden</NavLink>
             <NavLink to = "" >Ordenes</NavLink>
-            <NavLink to = "">Menú</NavLink>
             <NavLink id = "logout" to = "/" >Cerrar Sesión</NavLink>
         </div>
     )
