@@ -5,6 +5,7 @@ import {NavLink} from "react-router-dom";
 const Home = () => {
     return (
      <div id = "wrapper">
+     
         <div className="container">
         <img  src={mainLogo} alt="fireSpot"/>
     </div>
