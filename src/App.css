@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #151515;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -8,19 +8,26 @@ body {
   text-align: center;
   padding-left: 37%;
 }
+img{
+  padding-left: 11%;
+  padding-top: 5%;
+}
+
 
 #line {
   background-color: orange;
-  width: 20px;
+  width: 200px;
   height: 5px;
   position: relative;
-  top: 6%;
+  top: 20%;
   left: 3%;
 }
 
 #enter {
   background-color: orange;
-}
+  margin-top: 14%;
+  margin-left: 8%;
+}   
 
 #log {
   padding-top: 10%;
@@ -30,8 +37,8 @@ body {
 #input-type {
   display: inline-block;
   text-align: center;
-  padding-top: 5%;
-  padding-left: 40%;
+  padding-top: 7%;
+  padding-left: 35%;
 }
 
 #input-pa {
@@ -133,3 +140,12 @@ h4 {
     width: 4%;
     padding-bottom: 0.5%;
   }
+
+ #title-plates{
+   background-color: #ffb400;
+ }
+
+ 
+.titles-plates{
+  color:red;
+}

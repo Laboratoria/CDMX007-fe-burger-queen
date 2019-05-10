@@ -1,31 +1,22 @@
 import React from 'react';
+import mainLogo from'./logo.png';
 
 const Home = () => {
     return (
-        <div id = "home-title">
-
-        <div id = "title">
-          <h1>BURGER</h1>
-          <h2>QUEEN</h2>
-         </div>
-
-
-<div id = "line"></div>
-            
-          <div id = "log"><h3>HOLA, INICIA SESIÓN</h3></div>
-    
-
-
-
-
+        <div id = "wrapper">
+        <div className="container">
+      
+        <img  src={mainLogo} alt="fireSpot"/>
+      </div>
 <div id = "input-type">  
     <input type="password" id="input-pa" placeholder= "INTRODUCE TU CLAVE"name="password"></input> 
 
-    <button onClick = {console.log('You just clicked a recipe name.')} class="btn btn-primary" id= "enter"><i class= "fas fa-check"></i>entrar</button>
+    <button onClick = {console.log('You just clicked on me.')} class="btn btn-primary" id= "enter"><i class= "fas fa-check"></i>entrar</button>
     
             </div>
            
             </div>
+            
     );
 };
 

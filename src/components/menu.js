@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-grid-system';
+
+
 
 const Menu = () => {
     return (
@@ -16,19 +17,12 @@ const Menu = () => {
            <button class = "button">DESAYUNO</button> <button class = "button">COMIDA/CENA</button>
            <input type="searchField" id = "search-input" className="input"  placeholder="Buscar producto"/><i id= "search-icon" class="fas fa-search"></i>
        </div>
-       <Container>
-  <Row>
-    <Col sm={4}>
-      One of three columns
-    </Col>
-    <Col sm={4}>
-      One of three columns
-    </Col>
-    <Col sm={4}>
-      One of three columns
-    </Col>
-  </Row>
-</Container>
+       <div id = "title-plates">
+       <p>Platillos</p>
+       <p2>Bebidas</p2>
+       <p3>Complementos</p3>
+       </div>
+     
 
 
 
