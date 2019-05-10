@@ -14,9 +14,8 @@ const Menu = () => {
         </div>
 
        <div id = "title-plates">
-         <p>Platillos</p>
-         <p2>Bebidas</p2>
-         <p3>Complementos</p3>
+         <p>Platillos    Bebidas  Complentos </p>
+     
        </div>
      
     </div>
