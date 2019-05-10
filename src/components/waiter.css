@@ -1,0 +1,27 @@
+.waiter-img {
+  outline: none;
+  position: absolute;
+  border: 0;
+  width: 128px;
+  height: 128px;
+  right: 18%;
+  top: 18%;
+  background: url(../assets/waiter.svg);
+  background-repeat: no-repeat;
+
+
+}
+
+.hamburguer {
+  outline: none;
+  position: absolute;
+  border: 0;
+  outline: none;
+  width: 51px;
+  height: 51px;
+  right: 11.8%;
+  top: 28%;
+  background: url(../assets/burguer.svg);
+  background-repeat: no-repeat;
+
+}

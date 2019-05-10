@@ -1,19 +1,31 @@
 import React from 'react';
 import './login.css';
-import EnterButton from '../components/enter-button';
-import Logologin from '../components/logo-login';
+import EnterButton from '../components/Enter-button';
+import Logologin from '../components/Logo-login';
+import FooterLogin from '../components/Footer-login'
+import Waiter from '../components/Waiter';
+import Password from '../components/Password-area'
 // import { ReactComponent } from '*.svg';
 
 
 
 class Login extends React.Component {
+  
+
     render(){
         return(
             <div> <EnterButton/>
             <Logologin/>
-            </div>   
+                   <Waiter/>
+                   <Password/>
+           <FooterLogin/>
+           
+            </div>
+       
         )
     }
+
+
 }
 
 
