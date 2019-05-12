@@ -1,12 +1,16 @@
 import React from 'react';
+import Content from '../components/Content';
 
-const Menu = (props)=>(
-    <div className="container">
-       
-     <h2>Menú</h2>
-     
-    </div>
-);
+//Data
+import items from '../components/menu';
 
+
+class Menu extends React.Component{
+    render(){
+        return (
+            <Content title="Menú" items ={items}/>
+        )
+    }
+}
 
 export default Menu;

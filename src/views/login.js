@@ -10,16 +10,15 @@ import Password from '../components/Password-area'
 
 
 class Login extends React.Component {
-  
 
     render(){
         return(
-            <div> <EnterButton/>
-            <Logologin/>
-                   <Waiter/>
+            <div> 
+                <EnterButton/>
+                    <Logologin/>
+                        <Waiter/>
                    <Password/>
-           <FooterLogin/>
-           
+              <FooterLogin/>
             </div>
        
         )

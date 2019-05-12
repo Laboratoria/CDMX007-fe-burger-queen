@@ -1,11 +1,11 @@
 import React from 'react';
 import './footer.css';
 
-const FooterLogin = ()=>(
-      
-           <img alt="" className="Footer-login"/>
-         
- 
-);
 
+
+class FooterLogin extends React.Component{
+    render(){
+        return  <img alt="" className="Footer-login"/>
+    }
+}
 export default FooterLogin;

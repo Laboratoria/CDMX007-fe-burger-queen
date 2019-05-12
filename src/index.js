@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
+//se incluye el componente App
+import App from './views/App';
 import * as serviceWorker from './serviceWorker';
+
+
+//se renderiza el componente App, con el id del html como segundo parámetro.Es donde se inyectará
+//toda la lógica de la aplicación.
 
 ReactDOM.render(<App/>, document.getElementById('root'));
 
