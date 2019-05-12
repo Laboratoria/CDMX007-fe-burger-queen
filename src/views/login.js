@@ -1,5 +1,5 @@
 import React from 'react';
-import './login.css';
+import './Login.css';
 import EnterButton from '../components/Enter-button';
 import Logologin from '../components/Logo-login';
 import FooterLogin from '../components/Footer-login'
