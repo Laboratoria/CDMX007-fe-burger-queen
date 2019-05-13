@@ -54,18 +54,18 @@ class LoginFirebase extends Component {
           <div className="row input-login">
              <form className="col  s6 offset-s3 m3 offset-m7 ">
                  <div>
-                   <label for="Email">Introduce tu email</label>
-                   <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                   
+                   <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control form-pass" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu email" />
                    
                   </div>
                 <div>
-                   <label for="InputPassword">Password</label>
-                    <input value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
-                    {/* <small id="emailText" className="">No muestres tu contraseña a nadie</small> */}
+                 
+                    <input value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control form-pass" id="exampleInputPassword1" placeholder="Contraseña" />
+
                 </div >
                    <div className="row">
-                  <button type="submit" onClick={this.login} className=" waves-effect btn-small light-blue darken-3  col s10 offset-s1 m4  offset-m1">Ingresar</button>
-                        <button onClick={this.signup} className=" waves-effect btn-small white blue-text  col s10 offset-s1 m4 offset-m2">Registro</button>
+                  <button type="submit" onClick={this.login} className="login-btn waves-effect yellow darken-1 btn-small  col s10 offset-s1 m4  offset-m1">Ingresar</button>
+                        <button onClick={this.signup} className=" register-btn waves-effect btn-small white yellow-text text-darken-1 col s10 offset-s1 m4 offset-m2">Registrarse</button>
                </div> 
                </form>
  </div>
