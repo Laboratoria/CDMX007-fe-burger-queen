@@ -1,10 +1,13 @@
 import React from 'react';
 import Content from '../components/Content';
 
-import fireBase from '../config-firebase/fireBase'
+import fireBase from '../config-firebase/FireBase';
+
+
 
 //Data
 import items from '../components/menu';
+
 
 
 class Menu extends React.Component{
@@ -23,12 +26,15 @@ logOut(){
     
     render(){
     
-        return (
-
+        return (  
+          
+           
+              
             <div>
             <Content title="Menú" items ={items}/>
             <button onClick={this.logOut}>LogOut</button>
             </div>
+           
         )
     }
 }

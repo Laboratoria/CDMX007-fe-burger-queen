@@ -1,56 +1,56 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import fireBase from './config-firebase/fireBase';
+import fireBase from './config-firebase/FireBase';
 
 class LoginFirebase extends Component {
   constructor(props) {
     super(props);
-    this.login = this.login.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-    this.signup = this.signup.bind(this);
-    this.state = {
-      email: '',
-      password: ''
+     this.login = this.login.bind(this);
+            this.handleChange = this.handleChange.bind(this);
+                 this.signup = this.signup.bind(this);
+        this.state = {
+            email: '',
+             password: ''
     };
   }
 
   handleChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
+     this.setState({ [e.target.name]: e.target.value });
   }
 
   login(e) {
     e.preventDefault();
-    fireBase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
-    }).catch((error) => {
+            fireBase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
+            }).catch((error) => {
         console.log(error);
+        alert('Contraseña incorrecta')
       });
   }
 
   signup(e){
     e.preventDefault();
-    fireBase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
-    }).then((u)=>{console.log(u)})
-    .catch((error) => {
-        console.log(error);
+            fireBase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
+                }).then((u)=>{console.log(u)})
+                 .catch((error) => {
+             console.log(error);
       })
   }
   render() {
     return (
-       <div className="col l3">
-       <form>
-      <div>
-       <label for="Email">Email address</label>
-       <input value={this.state.email} onChange={this.handleChange} type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-       <small id="emailText" class="">No muestres tu contraseña a nadie</small>
-      </div>
-       <div class="col l3">
-      <label for="InputPassword">Password</label>
-      <input value={this.state.password} onChange={this.handleChange} type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
-      </div>
-      <button type="submit" onClick={this.login} class="btn-large">Login</button>
-      <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn-large">Signup</button>
- </form>
- 
+          <div className="col l3">
+             <form>
+                     <div>
+                         <label for="Email">Email address</label>
+                         <input value={this.state.email} onChange={this.handleChange} type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                        <small id="emailText" class="">No muestres tu contraseña a nadie</small>
+                     </div>
+                <div class="col l3">
+                 <label for="InputPassword">Password</label>
+                    <input value={this.state.password} onChange={this.handleChange} type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                </div>
+                        <button type="submit" onClick={this.login} class="btn-large">Login</button>
+                        <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn-large">Signup</button>
+                </form>
  </div>
     );
   }
