@@ -1,22 +1,22 @@
 import React from 'react';
-import mainLogo from'./logo.png';
-import {NavLink} from "react-router-dom";
+import mainLogo from './logo.png';
 
 const Home = () => {
     return (
-     <div id = "wrapper">
-     
-        <div className="container">
-        <img  src={mainLogo} alt="fireSpot"/>
+    <div className = "wrapper">
+
+    <div className= "header">
+    <img src= {mainLogo} alt = "burgerQueen"></img>
     </div>
 
-<div id = "input-type">  
-    <input type="password" id="input-pa" placeholder= "INTRODUCE TU CLAVE"name="password"></input> 
-    <NavLink to="/Menu"> <button id="enter"><i class= "fas fa-check"></i>entrar</button></NavLink>
-</div>
-           
+    <div className = "content">
+    <input type = "password" id = "input-pa" placeholder= "introduce tu clave" name= "password"></input>
+    <button id="enter"><i class= "fas fa-check" to="/Menu"></i>entrar</button>
     </div>
-            
+    <div className = "footer"></div>
+   
+    </div>
+    
     );
 };
 

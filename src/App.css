@@ -1,134 +1,81 @@
-body {
+
+.wrapper{
   background-color: #151515;
-  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  display: grid;
+ grid-gap: 3px;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: 200px 300px 200px;
 }
 
-#title {
-  display: inline-block;
-  text-align: center;
-  padding-left: 37%;
-}
-img{
-  padding-left: 11%;
-  padding-top: 5%;
-}
-
-#img2{
-
-    padding-left: 41%;
-      margin-bottom: 2%;
-
-}
-
-
-#enter {
-  background-color: orange;
-  margin-top: 14%;
-  margin-left: 8%;
-}   
-
-#log {
-  padding-top: 10%;
-  padding-left: 35%;
-}
-
-#input-type {
-  display: inline-block;
-  text-align: center;
-  padding-top: 7%;
-  padding-left: 35%;
-}
-
-#input-pa {
-  color: rgb(83, 82, 82);
-  text-align: center;
-  background-color: gray;
-  border: 15px solid rgb(63, 62, 62);
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-#input-pa:focus {
-  width: 100%;
-}
-
-
-#navlinks {
-  padding-top: 5%;
-  padding-left: 10%;
-}
-
-#buttons-nav {
-  padding-left: 12%;
+.header{
   
+  grid-column: 1/-1;
+}
+
+.content{
+  grid-column: 1/-1;
 }
 
 
-
-.button {
-  background-color: #353535;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 15px;
-  padding: 10px 70px;
-  text-decoration: none;
-  text-orientation: center;
-  border: none;
-  margin: 7px;
+.footer{
+  background-color: #151515;
+  grid-column: 1/ -1;
 }
 
-#search-input {
-  background-color: #353535;
-  border: none;
-  font-size: 1.5em;
-  box-align: center;
-  padding-bottom: 0.7%;
-  margin: 0.1px;
-}
-
-#search-box {
-  background-color: gray;
-  color: black;
-  font-size: 15px;
-}
-
-a.active {
-  padding-right: 5%;
-  color: white;
-}
-
-a:hover {
-  border-bottom: solid 2px #ffb400;
-}
-
-
-#logout.active {
-  color: gray;
-  padding-left: 40%;
-}
-
-
-
-
-#search-icon{
-    color: black;
-    background-color: gray;
-    font-size: 2em;
-    width: 4%;
-    padding-bottom: 0.5%;
-  }
-
-
-
- p{
-  word-spacing: 20em;
-  padding-top: 2%;
-  padding-left: 8%;
-  color: white;
- }
-
+.nav-wrapper{
+  background-color: red;
+ display: grid;
+ grid-gap: 3px;
  
-#search{
-  padding-left: 8%;
+}
+
+.wrapper-menu{
+  height: 100%;
+  display: grid;
+ grid-gap: 3px;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: 100px 50px 100px; 
+}
+
+.header-inside{
+  grid-column: 1/-1;
+  background-color: green; 
+}
+
+.menu-inside{
+  background-color: aqua;
+  grid-column: 1/-1;
+}
+
+
+.item-one{
+  grid-column: 1/2;
+  background-color: yellow; 
+}
+
+
+.item-two{
+  background-color: purple;
+  grid-column: 2/3;
+}
+
+.item-three{
+  background-color: chartreuse;
+  grid-column: 3/4;
+}
+
+.takeout-options{
+  background-color: violet;
+  grid-column: 1/4;
+}
+
+.order{
+  background-color: rosybrown;
+  grid-column: 1/4;
+}
+
+.payment-methods{
+  background-color: blue;
+  grid-column: 1/4;
 }

@@ -2,26 +2,34 @@ import React from 'react';
 import mainLogoMenu from'./logo2.png';
 
 
+
 const Menu = () => {
     return (
- <div id = "menu-page">
-<img  src={mainLogoMenu } id= "img2" alt="WhiteBurger"/>
+<div className = "wrapper-menu">
 
-    <div id = "buttons-nav">
-        <div id = "search">
-           <button class = "button">DESAYUNO</button> <button class = "button">COMIDA/CENA</button>
-           <input type="searchField" id = "search-input" className="input"  placeholder="Buscar producto"/><i id= "search-icon" class="fas fa-search"></i>
-        </div>
-
-       <div id = "title-plates">
-         <p>Platillos    Bebidas  Complentos </p>
-     
-       </div>
-     
-    </div>
-
+<div className = "header-inside">
+   <img  src={mainLogoMenu } id= "img2" alt="WhiteBurger"/>
 </div>
-    );
+
+
+
+<div className = "menu-inside">botones interactivos</div>
+
+
+
+<div className = "item-one">img 1</div>
+<div className = "item-two">img 2</div>
+<div className = "item-three">img 3</div>
+
+<div className = "takeout-options">opciones de pago</div>
+<div className = "order">creación de comanda</div>
+<div className = "payment-methods">metodos de pago</div>
+</div>
+
+);
 };
+
+
+
 
 export default Menu; 
