@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import Crown from '../assets/crown.png';
+import React, {Component} from '../../../node_modules/react';
+import Crown from '../../assets/crown.png';
 import './crown.css';
 
 

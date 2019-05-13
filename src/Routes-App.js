@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Confirm from './views/Confirm-order';
-import Manual from './views/Manual';
-import Menu from './views/Menu';
-import Promotions from './views/Promotions';
+import Navbar from './components/Navbar/Navbar';
+import Confirm from './views/Confirm-order/Confirm-order';
+import Manual from './views/Manual/Manual';
+import Menu from './views/Menu/Menu';
+import Promotions from './views/Promotions/Promotions';
 
 
 

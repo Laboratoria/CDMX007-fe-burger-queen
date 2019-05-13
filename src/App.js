@@ -9,8 +9,8 @@ import fireBase from './config-firebase/FireBase';
 // import Confirm from './views/Confirm-order';
 // import Manual from './views/Manual';
 // import Promotions from './views/Promotions';
-import LoginFirebase from './views/Login-firebase';
-import Menu from './views/Menu';
+import LoginFirebase from './views/Login-firebase/Login-firebase';
+import Menu from './views/Menu/Menu';
 
 //Estilos
 import './App.css';

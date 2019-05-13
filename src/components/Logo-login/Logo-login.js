@@ -1,6 +1,6 @@
 
 
-import React from 'react';
+import React from '../../../node_modules/react';
 import './logo-login.css'
 
 

@@ -1,12 +1,9 @@
 import React from 'react';
-import Content from '../components/Content';
-
-import fireBase from '../config-firebase/FireBase';
-
-
+import Content from '../../components/Content/Content';
+import fireBase from '../../config-firebase/FireBase';
 
 //Data
-import items from '../components/menu';
+import items from '../../components/Menu-Data/menu-data';
 
 
 

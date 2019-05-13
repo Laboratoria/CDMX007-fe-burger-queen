@@ -1,8 +1,8 @@
 
-import React, {Component} from 'react';
+import React, {Component} from '../../../node_modules/react';
 import './waiter.css'
-import WaiterImg from '../assets/waiter.svg';
-import Burguer from'../assets/burguer.svg'
+import WaiterImg from '../../assets/waiter.svg';
+import Burguer from'../../assets/burguer.svg'
 
 
 class Waiter extends Component{
