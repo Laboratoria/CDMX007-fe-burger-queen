@@ -9,11 +9,9 @@ import Promotions from './views/Promotions';
 
 
 
-
 class RoutesApp extends Component{
     render(){
         return(
-     
         <BrowserRouter>
         <div className="App">
           <Navbar title="Burguer Queen"/>
@@ -22,7 +20,7 @@ class RoutesApp extends Component{
               <Route path ="/confirm" component={Confirm}/>
               <Route path ="/manual" component={Manual}/>
               <Route path ="/promotions" component={Promotions}/>
-      </div>
+        </div>
       </BrowserRouter>
       )
     }

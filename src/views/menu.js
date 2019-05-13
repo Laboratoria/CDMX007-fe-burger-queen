@@ -21,15 +21,9 @@ logOut(){
 }
 
 
-
-
-    
     render(){
-    
         return (  
-          
-           
-              
+         
             <div>
             <Content title="Menú" items ={items}/>
             <button onClick={this.logOut}>LogOut</button>

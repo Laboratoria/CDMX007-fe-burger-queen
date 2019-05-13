@@ -4,10 +4,10 @@
   border: 0;
   width: 128px;
   height: 128px;
-  right: 18%;
+  right: 26%;
   top: 18%;
-  background: url(../assets/waiter.svg);
-  background-repeat: no-repeat;
+
+
 
 
 }
@@ -19,9 +19,7 @@
   outline: none;
   width: 51px;
   height: 51px;
-  right: 11.8%;
+  right: 19.8%;
   top: 28%;
-  background: url(../assets/burguer.svg);
-  background-repeat: no-repeat;
-
+ 
 }
