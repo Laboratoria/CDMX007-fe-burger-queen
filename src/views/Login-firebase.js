@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import fireBase from './config-firebase/FireBase';
+import fireBase from '../config-firebase/FireBase';
 import './login-firebase.css';
-import FooterLogin from './components/Footer-login';
-import Waiter from './components/Waiter'
-import Logologin from './components/Logo-login';
-import CrownImg from './components/Crown';
+import FooterLogin from '../components/Footer-login';
+import Waiter from '../components/Waiter'
+import Logologin from '../components/Logo-login';
+import CrownImg from '../components/Crown';
 
 
 

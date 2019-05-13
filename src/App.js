@@ -9,7 +9,8 @@ import fireBase from './config-firebase/FireBase';
 // import Confirm from './views/Confirm-order';
 // import Manual from './views/Manual';
 // import Promotions from './views/Promotions';
-import LoginFirebase from './Login-firebase';
+import LoginFirebase from './views/Login-firebase';
+import Menu from './views/Menu';
 
 //Estilos
 import './App.css';
@@ -45,7 +46,7 @@ componentDidMount(){
   render(){
     return(
  
-    <div>{this.state.user ? (<div><RoutesApp/></div>):(   <LoginFirebase/>)}
+    <div>{this.state.user ? (<div><RoutesApp/><Menu/></div>):(   <LoginFirebase/>)}
         </div>
 
      
@@ -54,5 +55,4 @@ componentDidMount(){
 }
 
 export default App;
-
 

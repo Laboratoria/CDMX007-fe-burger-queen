@@ -26,7 +26,7 @@ logOut(){
          
             <div>
             <Content title="Menú" items ={items}/>
-            <button onClick={this.logOut}>LogOut</button>
+            <button onClick={this.logOut}>Cerrar sesión</button>
             </div>
            
         )

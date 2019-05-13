@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Login from './views/Login';
 import Confirm from './views/Confirm-order';
 import Manual from './views/Manual';
 import Menu from './views/Menu';
@@ -15,7 +14,6 @@ class RoutesApp extends Component{
         <BrowserRouter>
         <div className="App">
           <Navbar title="Burguer Queen"/>
-              <Route extact path ="/login" component={Login}/>
               <Route path ="/menu" component={Menu}/>
               <Route path ="/confirm" component={Confirm}/>
               <Route path ="/manual" component={Manual}/>
