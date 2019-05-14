@@ -26,7 +26,7 @@
     background-color: #fff !important;
   }
 .form-pass:focus{
-  border-bottom: 1px solid #fdd835  !important;
-    box-shadow: 0 1px 0 0 #fdd835  !important
+  border-bottom: 1px solid #0277bd  !important;
+    box-shadow: 0 1px 0 0 #0277bd  !important
 }
 
