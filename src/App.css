@@ -1,47 +1,75 @@
 
+
+*body{
+  background-color: #151515;
+  display: flex;
+}
 .wrapper{
   background-color: #151515;
   height: 100%;
   display: grid;
- grid-gap: 3px;
  grid-template-columns: repeat(2, 1fr);
  grid-template-rows: 200px 300px 200px;
 }
 
 .header{
-  
+  background-color: #151515;
   grid-column: 1/-1;
+  padding-bottom: 100%;
 }
 
 .content{
+  background-color: #151515;
   grid-column: 1/-1;
+  
 }
 
 
 .footer{
   background-color: #151515;
   grid-column: 1/ -1;
+  padding-bottom: 100%;
 }
 
 .nav-wrapper{
-  background-color: red;
+  background-color: #151515;
+  padding-bottom: 4%;
  display: grid;
- grid-gap: 3px;
+ 
  
 }
 
 .wrapper-menu{
+  background-color: #151515;
   height: 100%;
   display: grid;
- grid-gap: 3px;
  grid-template-columns: repeat(3, 1fr);
  grid-template-rows: 100px 50px 100px; 
 }
 
 .header-inside{
   grid-column: 1/-1;
-  background-color: green; 
+  background-color: #151515;
 }
+#mainLogo{
+padding-left: 25%; 
+
+}
+
+
+#input-pa {
+  width: 25%;
+  color: rgb(83, 82, 82);
+  text-align: center;
+  background-color: gray;
+  border: 15px solid rgb(63, 62, 62);
+  
+}
+
+
+ #img2{
+  padding-left: 40%;
+ }
 
 .menu-inside{
   background-color: aqua;
