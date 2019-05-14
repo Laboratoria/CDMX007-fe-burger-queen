@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import fireBase from '../../config-firebase/FireBase';
 import './login-firebase.css';
 import FooterLogin from '../../components/Footer-login/Footer-login';
@@ -30,7 +29,7 @@ class LoginFirebase extends Component {
             fireBase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
             }).catch((error) => {
         console.log(error);
-        alert('Contraseña incorrecta')
+        alert('Contraseña y/o usuario inválido')
       });
   }
 

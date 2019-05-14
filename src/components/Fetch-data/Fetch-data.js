@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './fetch-data.css';
 
 
+
 class FetchData extends Component{
     constructor (props){
         super(props);
