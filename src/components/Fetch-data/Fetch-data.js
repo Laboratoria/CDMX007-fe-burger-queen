@@ -21,6 +21,7 @@ class FetchData extends Component{
             this.setState({
                 isLoaded:true,
                 items:json,
+               
             })
         })
     }
@@ -29,6 +30,7 @@ class FetchData extends Component{
 
 
         var { isLoaded, items} = this.state;
+        console.log(items)
         if(!isLoaded){
             return <div>Cargando...</div>
         } else{
@@ -38,31 +40,18 @@ class FetchData extends Component{
                     <div className="row ">
                          <div className="col l10 offset-l1 m10  offset-m1">
                          <div className="card-panel grey lighten-5">
-                         <span className="card-style">
-                         {items.map(item=>(
-                              <p className="black-text "key={item.ID}> 
-                              {item.product} , { item.price}, {item.type}
-                              <form action="#" className="">
-    <p>
-      <label>
-        <input type="checkbox" />
-        <span></span>
-      </label>
-    </p>
-  
-</form>
-                              </p>
-                             
-                          ))};
-                    
-                         </span>
-                         </div>
-                     </div>
-                     </div>
+                         <span className="card-style black-text">
+                           {items.filter(item=>item.type ==='Desayuno').map(item=><p>{item.product}</p>)}
+
+
+
+
+                   
+                     </span>  </div> </div>  </div></div>
                       
                
  
-                  </div>
+                  
             )
         }
 
