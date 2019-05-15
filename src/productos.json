@@ -10,19 +10,19 @@
             "ID": "coffee01", 
             "product": "Café americano",
             "price": "$25.00",
-            "type": "Desayuno"
+            "type": "Bebida-Desayuno"
         },
         {
             "ID": "coffee02", 
             "product": "Café con leche",
             "price": "$35.00",
-            "type": "Desayuno"
+            "type": "Bebida-Desayuno"
         },
         {
             "ID": "juice001", 
             "product": "Jugo natural",
             "price": "$32.00",
-            "type": "Desayuno"
+            "type": "Bebida-Desayuno"
         },
         {
             "ID": "hambur01", 
@@ -52,13 +52,13 @@
             "ID": "soda0001", 
             "product": "Refresco",
             "price": "$26.00",
-            "type": "Comida"
+            "type": "Bebida-Comida"
         },
         {
             "ID": "extras01", 
             "product": "Papas a la francesa",
             "price": "$42.00",
-            "type": "Comida"
+            "type": "Extras-Comida"
         }
 
     ]
