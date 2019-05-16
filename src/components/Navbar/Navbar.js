@@ -22,7 +22,7 @@ logOut(){
 
   render(){
     return <nav>
-    <div className="nav-wrapper black">
+    <div className="nav-wrapper  grey darken-4">
       <ul id="nav-mobile" className="right hide-on-med-and-down text-black">
       <li ><NavLink  to="/menu">Menú</NavLink></li>
         <li><NavLink to="/confirm">Confirmar Orden</NavLink></li>

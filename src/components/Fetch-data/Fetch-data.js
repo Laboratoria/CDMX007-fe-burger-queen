@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './fetch-data.css';
-
+import FooterLogin from '../Footer-login/Footer-login'
 
 
 class FetchData extends Component{
@@ -49,10 +49,22 @@ class FetchData extends Component{
                        
                         
   <ul>
-                             <li className= "col l6 m6 text-menu"> <h4 className="  title-submenu">Desayunos</h4>{items.filter(item=>item.type ==='Desayuno').map(item=><p className="center">{item.product}</p>)}</li></ul>
+                             <li className= "col l6 m6 text-menu"> <h4 className="  title-submenu">Desayunos</h4>{items.filter(item=>item.type ==='Desayuno').map(item=><p className="center"><form action="#"> <p>
+      <label>
+        <input type="checkbox" />
+        <span className="white-text style-product" >{item.product} </span>
+      </label>
+    </p>
+    </form></p>)}</li></ul>
                          <ul>
                     
-                             <li className ="col l6 m6 text-menu"><h4 className="center title-submenu" >Bebidas</h4>{items.filter(item=>item.type ==='Bebida-Desayuno').map(item=><p className="center ">{item.product}</p>)}</li></ul>
+                             <li className ="col l6 m6 text-menu"><h4 className="center title-submenu" >Bebidas</h4>{items.filter(item=>item.type ==='Bebida-Desayuno').map(item=><p className="center "><form action="#"> <p>
+      <label>
+        <input type="checkbox" />
+        <span className="white-text style-product" >{item.product} </span>
+      </label>
+    </p>
+    </form></p>)}</li></ul>
                       </div>   
                      </span>  </div> </div>  </div>
                      
@@ -61,8 +73,27 @@ class FetchData extends Component{
                    <div className="card-panel ">
                     <span className="card-style white-text">
                       <div className="row"> <ul>
-                          <li className= "col l6 m6 text-menu"> <h4 className="  title-submenu">Hamburguesas</h4> {items.filter(item=>item.type ==='Comida').map(item=><p>{item.product}</p>)}</li></ul>
-                             <ul> <li className ="col l6 m6 text-menu veggie-menu">{items.filter(item=>item.type ==='Comida-Vegetariana').map(item=><p className="">{item.product}</p>)}</li></ul>
+                          <li className= "col l6 m6 text-menu"> <h4 className="  title-submenu">Hamburguesas</h4> {items.filter(item=>item.type ==='Comida').map(item=><p>     <form action="#"> <p>
+      <label>
+        <input type="checkbox" />
+        <span className="white-text style-product" >{item.product} </span>
+      </label>
+    </p>
+    </form></p>)}
+                          
+                     
+                          
+                          
+                          
+                          
+                          </li></ul>
+                             <ul> <li className ="col l6 m6 text-menu veggie-menu">{items.filter(item=>item.type ==='Comida-Vegetariana').map(item=><p className=""><form action="#"> <p>
+      <label>
+        <input type="checkbox" />
+        <span className="white-text style-product" >{item.product} </span>
+      </label>
+    </p>
+    </form></p>)}</li></ul>
                       </div>   
                      </span> 
                    </div>
@@ -73,8 +104,20 @@ class FetchData extends Component{
                    <div className="card-panel ">
                     <span className="card-style white-text">
                       <div className="row"> <ul>
-                          <li className= "col l6 m6 text-menu"> <h4 className="  title-submenu">Bebidas</h4> {items.filter(item=>item.type ==='Bebida-Comida').map(item=><p>{item.product}</p>)}</li></ul>
-                             <ul> <li className ="col l6 m6 text-menu"><h4 className="center title-submenu" >Adicionales</h4>{items.filter(item=>item.type ==='Extras-Comida').map(item=><p className="">{item.product}</p>)}</li></ul>
+                          <li className= "col l6 m6 text-menu"> <h4 className="  title-submenu">Bebidas</h4> {items.filter(item=>item.type ==='Bebida-Comida').map(item=><p><form action="#"> <p>
+      <label>
+        <input type="checkbox" />
+        <span className="white-text style-product" >{item.product} </span>
+      </label>
+    </p>
+    </form></p>)}</li></ul>
+                             <ul> <li className ="col l6 m6 text-menu"><h4 className="center title-submenu" >Adicionales</h4>{items.filter(item=>item.type ==='Extras-Comida').map(item=><p className=""><form action="#"> <p>
+      <label>
+        <input type="checkbox" />
+        <span className="white-text style-product" >{item.product} </span>
+      </label>
+    </p>
+    </form></p>)}</li></ul>
                       </div>   
                      </span> 
                    </div>
@@ -83,7 +126,7 @@ class FetchData extends Component{
                   
                      
                      
-                     
+                     <FooterLogin/>
                      
                      </div>
                       
