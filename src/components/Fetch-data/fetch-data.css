@@ -1,10 +1,43 @@
-.card-style{
+.card-style {
     /* text-align: 
    
     background: rgba(lighten(blue, 1), 0.2) */
-    text-align:left;
-    font-size: 18px; 
+    text-align: left;
+    font-size: 18px;
     font-weight: 500;
-    
+
+
+
 }
 
+.title-submenu {
+    font-family: 'Dancing Script', cursive;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+.card-panel {
+    border-radius: 5px;
+    padding: .5px;
+    background: rgba(172, 165, 182, 0.9) !important;
+
+}
+
+.text-menu {
+    font-family: Neucha;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+
+    letter-spacing: 1px;
+
+
+}
+
+.veggie-menu{
+    position:relative;
+    top:55px;
+    left:10%;
+}

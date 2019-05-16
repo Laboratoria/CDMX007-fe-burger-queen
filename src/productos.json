@@ -26,27 +26,27 @@
         },
         {
             "ID": "hambur01", 
-            "product": "Hamburguesa de pollo",
+            "product": "H. de pollo",
             "price": "$82.00",
             "type": "Comida"
         },
         {
             "ID": "hambur02", 
-            "product": "Hamburguesa doble de pollo",
+            "product": "H. doble de pollo",
             "price": "$95.00",
             "type": "Comida"
         },
         {
             "ID": "hambur03", 
-            "product": "Hamburguesa sencilla vegetariana",
+            "product": "H. sencilla vegetariana",
             "price": "$79.00",
-            "type": "Comida"
+            "type": "Comida-Vegetariana"
         },
         {
             "ID": "hambur04", 
-            "product": "Hamburguesa doble vegetariana",
+            "product": "H. doble vegetariana",
             "price": "$89.00",
-            "type": "Comida"
+            "type": "Comida-Vegetariana"
         },
         {
             "ID": "soda0001", 
@@ -55,9 +55,21 @@
             "type": "Bebida-Comida"
         },
         {
+            "ID": "water0001", 
+            "product": "Agua",
+            "price": "$8.00",
+            "type": "Bebida-Comida"
+        },
+        {
             "ID": "extras01", 
             "product": "Papas a la francesa",
             "price": "$42.00",
+            "type": "Extras-Comida"
+        },
+        {
+            "ID": "extras02", 
+            "product": "Onion-Rings",
+            "price": "$43.00",
             "type": "Extras-Comida"
         }
 

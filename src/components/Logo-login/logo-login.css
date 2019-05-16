@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
 
 .App-header,
 .App-header-Two {
@@ -27,7 +27,7 @@
   left: 13%;
   top: 182px;
   /* font-family: 'Neucha', cursive; */
-  font-family: 'Sacramento', cursive;
-  font-size: 146px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 144px;
 }
  

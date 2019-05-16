@@ -35,38 +35,52 @@ class FetchData extends Component{
             return <div>Cargando...</div>
         } else{
             return(
+
+
                   <div>
-                             <h3>Realizar pedido</h3>
+                           <h4>1. Realiza tu pedido</h4>
                     <div className="row ">
-                         <div className="col l10 offset-l1 m10  offset-m1">
-                         <div className="card-panel grey lighten-5">
-                         <span className="card-style black-text">
+                         <div className="col l12  m12   s10 offset-s1">
+                         <div className="card-panel ">
+                         <span className="card-style white-text">
 
                          <div className="row">
                      
+                       
+                        
+  <ul>
+                             <li className= "col l6 m6 text-menu"> <h4 className="  title-submenu">Desayunos</h4>{items.filter(item=>item.type ==='Desayuno').map(item=><p className="center">{item.product}</p>)}</li></ul>
                          <ul>
-                         <h4 className=" center">Desayunos</h4>
-
-                             <li className= "col l6">{items.filter(item=>item.type ==='Desayuno').map(item=><p>{item.product}</p>)}</li></ul>
-                         <ul>
-                            
-                             
-                             <li className ="col l6"><h5>Bebidas</h5>{items.filter(item=>item.type ==='Bebida-Desayuno').map(item=><p>{item.product}</p>)}</li></ul>
+                    
+                             <li className ="col l6 m6 text-menu"><h4 className="center title-submenu" >Bebidas</h4>{items.filter(item=>item.type ==='Bebida-Desayuno').map(item=><p className="center ">{item.product}</p>)}</li></ul>
                       </div>   
                      </span>  </div> </div>  </div>
                      
-                 
-                             
-                    <div className="row ">
-                         <div className="col l10 offset-l1 m10  offset-m1">
-                         <div className="card-panel grey lighten-5">
-                         <span className="card-style black-text">
-
-                         
-
-                           {items.filter(item=>item.type ==='Comida').map(item=><p>{item.product}</p>)}
-                         
-                     </span>  </div> </div>  </div>
+                 <div className="row ">
+                  <div className="col l12  m12   s10 offset-s1">
+                   <div className="card-panel ">
+                    <span className="card-style white-text">
+                      <div className="row"> <ul>
+                          <li className= "col l6 m6 text-menu"> <h4 className="  title-submenu">Hamburguesas</h4> {items.filter(item=>item.type ==='Comida').map(item=><p>{item.product}</p>)}</li></ul>
+                             <ul> <li className ="col l6 m6 text-menu veggie-menu">{items.filter(item=>item.type ==='Comida-Vegetariana').map(item=><p className="">{item.product}</p>)}</li></ul>
+                      </div>   
+                     </span> 
+                   </div>
+                </div> 
+             </div>
+             <div className="row ">
+                  <div className="col l12  m12   s10 offset-s1">
+                   <div className="card-panel ">
+                    <span className="card-style white-text">
+                      <div className="row"> <ul>
+                          <li className= "col l6 m6 text-menu"> <h4 className="  title-submenu">Bebidas</h4> {items.filter(item=>item.type ==='Bebida-Comida').map(item=><p>{item.product}</p>)}</li></ul>
+                             <ul> <li className ="col l6 m6 text-menu"><h4 className="center title-submenu" >Adicionales</h4>{items.filter(item=>item.type ==='Extras-Comida').map(item=><p className="">{item.product}</p>)}</li></ul>
+                      </div>   
+                     </span> 
+                   </div>
+                </div> 
+             </div>         
+                  
                      
                      
                      
