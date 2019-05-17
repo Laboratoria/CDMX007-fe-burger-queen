@@ -2,24 +2,19 @@ import React, { Component } from 'react';
 import { BrowserRouter , Route} from "react-router-dom";
 import './App.css';
 import Home from "./components/Home";
-import Menu from "./components/Menu";
-import Navigation from "./components/Navigation"; 
+import FastFood from "./components/FastFood";
+
+
 
 
 class App extends Component { 
   render() {
     return (
     <BrowserRouter>
-     <div>
-   <Navigation/> 
-
-    <div>
+  
       <Route path= "/"  component = {Home} exact /> 
-      <Route path= "/Menu"  component = {Menu}/>
-    </div>
-    
-    
-     </div>
+      <Route path= "/FastFood"  component = {FastFood}/>
+
     </BrowserRouter>
     );
 
