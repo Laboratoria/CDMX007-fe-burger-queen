@@ -1,9 +1,9 @@
 import React from 'react';
-import Content from '../../components/Content/Content';
+// import Content from '../../components/Content/Content';
 
 import FetchData from '../../components/Fetch-data/Fetch-data'
 // //Data
-import items from '../../components/Menu-Data/menu-data';
+// import items from '../../components/Menu-Data/menu-data';
 import Clock from '../../components/Clock/Clock'
 
 
@@ -15,7 +15,7 @@ class Menu extends React.Component{
             <div> 
                <Clock/>
                  <FetchData/>
-            <Content title="Menú" items ={items}/>
+            {/* <Content title="Menú" items ={items}/> */}
        </div>
        )
               

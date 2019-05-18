@@ -4,7 +4,7 @@ import fireBase from './config-firebase/FireBase';
 import LoginFirebase from './views/Login-firebase/Login-firebase';
 import './App.css';
 import RoutesApp from './Routes-App';
-// import history from './History';
+
 
 
 
@@ -38,7 +38,8 @@ componentDidMount(){
     
     return(
       
-    <div>{this.state.user ? (<RoutesApp/>):(  <LoginFirebase/>  )}
+    <div>{this.state.user ? (<RoutesApp/>
+    ):(  <LoginFirebase/>  )}
        </div>
     )
   }
