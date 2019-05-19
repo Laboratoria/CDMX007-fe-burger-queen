@@ -5,8 +5,11 @@ import { FoodGrid } from "./FoodGrid";
 import {Takeout} from './Takeout';
 import  {Additional} from './Additional';
 
+
+
 class App extends React.Component {
     render (){
+     
         return(
             <div className = "container">
              <div className = "row">
@@ -15,9 +18,10 @@ class App extends React.Component {
                   <h1 align = "center" color= "white">Burger</h1>
                   
                   <h2 align = "center" color= "white">Queen</h2>
+                 
                   <Options/> <br/>
                   <Additional/>
-                  <FoodGrid/>
+                  <FoodGrid/> 
                   <Takeout/>
                 </div>
               </div>
