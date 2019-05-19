@@ -61,9 +61,9 @@ class Navbar extends Component {
                     </li >
                     <li className="row"><button className="btn-large btn-logOut col m8 offset-m2"onClick={this.logOut}>Salir</button></li>
                 </ul>
-                <a href="#" data-target="slide-out" className="sidenav-trigger" >
-                    <i className="material-icons">Menú de navegación</i>
-                </a>
+                <div  data-target="slide-out" className="sidenav-trigger row" >
+                <i className="fas fa-bars fa-2x col m1  hamburguer-menu"></i>
+                </div>
             </div>
         );
     }

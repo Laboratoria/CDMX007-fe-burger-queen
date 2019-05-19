@@ -89,13 +89,12 @@ componentWillMount = () => {
         } else{
             return(
                   <>
-           <h4>1. Realiza tu pedido</h4>
-                
+           <h4>1. Realiza tu pedido</h4>         
                <div className="row ">
                  <div className="col l12  m12   s10 offset-s1">
                    <div className="card-panel ">
                      <span className="card-style white-text">
-                        <div className="row">
+                        <div className="row card-section">
                          <ul>  
                            <li className= "col l6 m6 text-menu"> 
                          <h4 className="  title-submenu">Desayunos</h4>
@@ -135,7 +134,7 @@ componentWillMount = () => {
                   <div className="col l12  m12   s10 offset-s1">
                    <div className="card-panel ">
                     <span className="card-style white-text">
-                      <div className="row"> 
+                      <div className="row card-section"> 
                       <ul>
                           <li className= "col l6 m6 text-menu"> 
                           <h4 className="  title-submenu">Hamburguesas</h4> 
@@ -173,11 +172,11 @@ componentWillMount = () => {
                    </div>
                 </div> 
              </div>
-             <div className="row ">
+              <div className="row ">
                   <div className="col l12  m12   s10 offset-s1">
                    <div className="card-panel ">
                     <span className="card-style white-text">
-                      <div className="row"> <ul>
+                      <div className="row card-section"> <ul>
                           <li className= "col l6 m6 text-menu"> <h4 className="  title-submenu">Bebidas</h4> {items.filter(item=>item.type ==='Bebida-Comida').map(item=><p><form onSubmit={this.handleSendOrder}> <p>
                             <div>   <Checkbox
                       label={item.product}
