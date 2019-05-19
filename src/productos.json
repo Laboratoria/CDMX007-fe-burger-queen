@@ -3,73 +3,73 @@
         {
             "ID": "sndwch01", 
             "product": "Sandwich de jamón con queso",
-            "price": "$42.00",
+            "price": "42.00",
             "type": "Desayuno"
         },
         {
             "ID": "coffee01", 
             "product": "Café americano",
-            "price": "$25.00",
+            "price": "25.00",
             "type": "Bebida-Desayuno"
         },
         {
             "ID": "coffee02", 
             "product": "Café con leche",
-            "price": "$35.00",
+            "price": "35.00",
             "type": "Bebida-Desayuno"
         },
         {
             "ID": "juice001", 
             "product": "Jugo natural",
-            "price": "$32.00",
+            "price": "32.00",
             "type": "Bebida-Desayuno"
         },
         {
             "ID": "hambur01", 
             "product": "H. de pollo",
-            "price": "$82.00",
+            "price": "82.00",
             "type": "Comida"
         },
         {
             "ID": "hambur02", 
             "product": "H. doble de pollo",
-            "price": "$95.00",
+            "price": "95.00",
             "type": "Comida"
         },
         {
             "ID": "hambur03", 
             "product": "H. sencilla vegetariana",
-            "price": "$79.00",
+            "price": "79.00",
             "type": "Comida-Vegetariana"
         },
         {
             "ID": "hambur04", 
             "product": "H. doble vegetariana",
-            "price": "$89.00",
+            "price": "89.00",
             "type": "Comida-Vegetariana"
         },
         {
             "ID": "soda0001", 
             "product": "Refresco",
-            "price": "$26.00",
+            "price": "26.00",
             "type": "Bebida-Comida"
         },
         {
             "ID": "water0001", 
             "product": "Agua",
-            "price": "$8.00",
+            "price": "8.00",
             "type": "Bebida-Comida"
         },
         {
             "ID": "extras01", 
             "product": "Papas a la francesa",
-            "price": "$42.00",
+            "price": "42.00",
             "type": "Extras-Comida"
         },
         {
             "ID": "extras02", 
             "product": "Onion-Rings",
-            "price": "$43.00",
+            "price": "43.00",
             "type": "Extras-Comida"
         }
 
