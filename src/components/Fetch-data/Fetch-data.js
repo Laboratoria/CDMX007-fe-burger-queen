@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import Checkbox from '../Checkboxes/Checkboxes';
 import './fetch-data.css';
 
-const value1=[]; 
+const allItems=[]; 
 class FetchData extends Component{
     constructor (props){
         super(props);
         this.state={
             items:[],
             isLoaded:false,
-            value: value1
+            value: allItems
         }
     }
 
@@ -43,10 +43,10 @@ class FetchData extends Component{
      
       for ( let value of this.selectedProducts) {
       
-       value1.push(value)
-       console.log([value1])
+       allItems.push(value)
+       console.log([allItems])
 
-      //  document.getElementById("root").innerHTML = ` <li>${value1} </li>  `
+      //  document.getElementById("root").innerHTML = ` <li>${allItems} </li>  `
       
        
   };
