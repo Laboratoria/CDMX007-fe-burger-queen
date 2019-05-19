@@ -68,7 +68,7 @@ class LoginFirebase extends Component {
 
                 </div >
                    <div className="row">
-                  <button type="submit" onClick={this.login} className="login-btn waves-effect black btn-small  col s10 offset-s1 m4 offset-m1">Ingresar</button>
+                  <button type="submit" onClick={this.login} className="login-btn waves-effect  btn-small  col s10 offset-s1 m4 offset-m1">Ingresar</button>
                         <button onClick={this.signup} className=" register-btn waves-effect btn-small white black-text  col s10 offset-s1 m5 offset-m1">Registrarse</button>
                </div> 
                </form>

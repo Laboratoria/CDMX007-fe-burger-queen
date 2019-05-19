@@ -1,0 +1,22 @@
+.sidenav{
+    background-color: rgba(202, 163, 163, 0.99)
+}
+
+.sidenav li>a {
+    margin-top:15px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    height: 99px;
+    line-height: 114px;
+    padding: 0 10px;
+   
+    
+}
+
+.btn-logOut{
+margin-top:35px;
+font-size: 18px;
+font-weight: 600;
+}

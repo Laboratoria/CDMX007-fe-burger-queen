@@ -4,6 +4,7 @@ import fireBase from '../../config-firebase/FireBase';
 import M from 'materialize-css';
 import React, { Component } from "react";
 import "materialize-css/dist/css/materialize.min.css";
+import "./Navbar.css"
 
 class Navbar extends Component {
 
@@ -32,9 +33,13 @@ class Navbar extends Component {
             <div>
                 <ul id="slide-out" className="sidenav">
                     <li />
+                   
                     <li>
                        <NavLink  to="/menu">Menú</NavLink></li>
                         <li >
+                    </li>
+                    <li>
+                        <div className="divider" />
                     </li>
                     <li>
                     <NavLink to="/confirm">Confirmar Orden</NavLink>
@@ -46,9 +51,15 @@ class Navbar extends Component {
                     <NavLink to="/promotions">Promociones</NavLink>
                     </li>
                     <li>
+                        <div className="divider" />
+                    </li>
+                    <li>
                     <NavLink to="/manual">Manual</NavLink>
                     </li>
-                    <li><button className="btn-small"onClick={this.logOut}>Salir</button></li>
+                    <li>
+                        <div className="divider" />
+                    </li >
+                    <li className="row"><button className="btn-large btn-logOut col m8 offset-m2"onClick={this.logOut}>Salir</button></li>
                 </ul>
                 <a href="#" data-target="slide-out" className="sidenav-trigger" >
                     <i className="material-icons">Menú de navegación</i>
