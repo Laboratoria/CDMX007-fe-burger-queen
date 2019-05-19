@@ -13,13 +13,14 @@ body{
   
 }
 
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 900px) {
   #burger-home{
     position: absolute;
   width: 768px;
   height: 38px;
   left: 0px;
   top: 110px;
+  margin-left: 21%;
   
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-style: normal;
@@ -41,6 +42,7 @@ body{
   height: 45px;
   left: 332px;
   top: 158px;
+  margin-left: 21%;
   
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-style: normal;
@@ -63,7 +65,8 @@ body{
   height: 5px;
   left: 357px;
   top: 266px;
-  
+  margin-left: 20%;
+
   background: #FFB400;
   }
   #greeting{
@@ -72,6 +75,8 @@ body{
     height: 86px;
     left: 0px;
     top: 294px;
+    margin-left: 20%;
+
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-style: italic;
     font-weight: 600;
@@ -94,6 +99,8 @@ body{
   right: 10.94%;
   top: 40.53%;
   bottom: 49.61%;
+  margin-left: 20%;
+
   
   background: rgba(255, 255, 255, 0.11);
   
@@ -122,7 +129,8 @@ body{
   left: 40%;
   top: 78.41%;
   bottom: 14.05%;
-  
+  margin-left: 4%;
+
   background: #FFB400;
   box-shadow: 0px 1px 0px #848688;
     
@@ -132,6 +140,7 @@ body{
   
   div #navlinks{
     padding-top: 3%;
+    padding-left: 15%;
   }
   
   a.active#PROMO{
@@ -196,6 +205,7 @@ body{
   height: 38px;
   left: 0px;
   top: 113px;
+  margin-left: 21%;
   
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-style: normal;
@@ -217,7 +227,8 @@ body{
   height: 45px;
   left: 347px;
   top: 149px;
-  
+  margin-left: 21%;
+
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -238,6 +249,8 @@ body{
    height: 32px;
    left: 22px;
    top: 223px;
+   padding-bottom: 1%;
+   margin-top: 2%;
   
    padding-bottom: 2.5%;
   
@@ -264,6 +277,8 @@ body{
     height: 27px;
     left: 272px;
     top: 225px;
+    margin-left: 21%;
+    margin-top: 2%;
     
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-style: normal;
@@ -291,11 +306,12 @@ body{
     margin-left: 193%;
     padding-bottom: 1%;
     padding-top: 1%;
-  
+    margin-top: 75%;
   width: 180px;
   height: 32px;
   left: 523px;
   top: 223px;
+  margin-left: 367%;
   
   background: #353535;
   
@@ -310,6 +326,7 @@ body{
   
   #additional{
     padding-top: 2%;
+    margin-left: 25%;
   }
   
   #meals.ui.button{
@@ -379,6 +396,8 @@ body{
   
   .ui.black.inverted.segment{
     padding-bottom: 70%;
+  
+   
   }
   
   #diner{
@@ -403,7 +422,7 @@ body{
   height: 32px;
   left: 276px;
   top: 570px;
-  
+  margin-left: 58%;
   background: #353535;
   text-align: center;
   letter-spacing: 0.01em;
@@ -433,7 +452,14 @@ body{
   
   }
 
-#burger-home{
+
+  @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+ { 
+  
+  
+  #burger-home{
   position: absolute;
 width: 768px;
 height: 38px;
@@ -847,4 +873,6 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 
+
+}
 

@@ -25,7 +25,7 @@ const breakfast = [
 class App extends React.Component{
 
 	breakfastRenderObject(){
-		return Object.entries(ObjectTest).map(([key, value], i) => {
+		return breakfast(ObjectTest).map(([key, value], i) => {
 			return (
 				<div key={key}>
 					id is: {value.id} ;
