@@ -28,11 +28,18 @@ class Checkbox extends Component {
 
 
 <label>
+  {/* type="text"
+    name="fullname"
+    placeholder="Full name"
+    onChange={this.updateInput)
+    value={this.state.fullname} */}
         <input type="checkbox" 
+        name={label}
         value={label}
         value2={label2}
         checked={isChecked}
-        onChange={this.activateCheckboxChange}/>
+        onChange={this.activateCheckboxChange
+ }/>
         <span className="white-text style-product" > {label}  {label2} </span>
       </label>
       

@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import Checkbox from '../Checkboxes/Checkboxes';
 import './fetch-data.css';
 
-
+const value1=[]; 
 class FetchData extends Component{
     constructor (props){
         super(props);
         this.state={
             items:[],
             isLoaded:false,
+            value: value1
         }
     }
 
@@ -25,7 +26,8 @@ class FetchData extends Component{
 
 
     componentWillMount = () => {
-      this.selectedProducts = new Set();
+      this.selectedProducts = new Set()
+    
     }
   
     activateCheckbox = (label, label2)=> {
@@ -33,17 +35,29 @@ class FetchData extends Component{
         this.selectedProducts.delete([label] +" "+ [label2]);
       } else {
         this.selectedProducts.add([label] +" "+ [label2]);
-      }
+       
     }
-  
-    handleSendOrder = formSubmitEvent => {
+    }
+  handleSendOrder = formSubmitEvent => {
       formSubmitEvent.preventDefault()
-      for (const value of this.selectedProducts) {
-        console.log(value)
+     
+      for ( let value of this.selectedProducts) {
       
-   
+       value1.push(value)
+       console.log([value1])
+
+      //  document.getElementById("root").innerHTML = ` <li>${value1} </li>  `
+      
+       
   };
 }
+
+// const checkedvalue1=[]; 
+// for (const checkbox of this.selectedCheckboxes) {
+// console.log(checkbox, 'is selected.');
+// checkedvalue1.push(checkbox);
+// }
+
 
     createCheckbox = (label, label2) => (
       <Checkbox
@@ -56,11 +70,12 @@ class FetchData extends Component{
   
     createCheckboxes = () => (
       this.createCheckbox()
+     
     )
 
     render(){
-
-
+      // console.log(this.createHola())
+     
         let { isLoaded, items} = this.state;
 
         if(!isLoaded){
@@ -69,6 +84,7 @@ class FetchData extends Component{
             return(
                   <>
            <h4>1. Realiza tu pedido</h4>
+           
                <div className="row ">
                  <div className="col l12  m12   s10 offset-s1">
                    <div className="card-panel ">
@@ -194,6 +210,7 @@ class FetchData extends Component{
 }
 
 export default FetchData;
+
 
 
 
