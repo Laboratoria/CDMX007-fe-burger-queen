@@ -40,8 +40,9 @@ h4 {
 
 
 }
-.prueba{
-font-size: 40px;
+.confirm-order-card{ 
+font-size: 28px;
+
 }
 .veggie-menu{
     position:relative;
@@ -64,4 +65,10 @@ font-size: 40px;
     top: 40px;
     font-size: 18px;
     box-shadow:none;
+    }
+    
+    .card-confirm-order{
+    position:relative;
+    top:65px !important;
+    
     }

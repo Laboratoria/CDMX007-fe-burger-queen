@@ -48,12 +48,12 @@ class Navbar extends Component {
                       <li>
                         <div className="divider" />
                     </li>
-                       <li>
+                       {/* <li>
                         <NavLink to="/confirm">Confirmar Orden</NavLink>
                     </li>
                       <li>
                         <div className="divider" />
-                    </li>
+                    </li> */}
                        <li>
                        <NavLink to="/promotions">Promociones</NavLink>
                     </li>

@@ -28,60 +28,55 @@ componentDidMount() {
         items: json,
       })
     })
+
 }
 
 
 componentWillMount = () => {
   this.selectedProducts = new Set()
-  this.sumPrice = new Set ()
+  this.sumPrice = new Set()
 
-}
+  }
   
-    activateCheckbox = (label, label2) => {
-      if (this.selectedProducts.has([label]) &&(this.sumPrice.has([label2]))) {
-        this.selectedProducts.delete([label])
+activateCheckbox = (label, label2) => {
+      if (this.selectedProducts.has([label] + [label2]) && (this.sumPrice.has([label2]))) {
+        this.selectedProducts.delete([label] + [label2])
         this.sumPrice.delete([label2]);
       } else {
-        this.selectedProducts.add([label]);
+        this.selectedProducts.add([label] + [label2]);
         this.sumPrice.add([label2])
       }
     }
-    handleSendOrder = formSubmitEvent => {
-      formSubmitEvent.preventDefault()
+    
+ handleSendOrder = formSubmitEvent => {
+     formSubmitEvent.preventDefault()
 
-      for (let value of this.selectedProducts) {
+     for (let value of this.selectedProducts) {
+       console.log(value)
+       allItems.push(value)
 
-        allItems.push(value)
-        console.log(allItems)
-      
-      };
-      
-      for(let value of this.sumPrice){
-     totalPrice.push(value)
-     const total = totalPrice.reduce((a, b)=>{ return a += parseFloat(b) },0)
-     console.log(total)
-     this.refs.test.innerHTML =`${allItems} $ ${totalPrice} ${total}`
+     };
+
+     for (let value of this.sumPrice) {
+       totalPrice.push(value)
+       const total = totalPrice.reduce((a, b) => {
+         return a += parseFloat(b)
+       }, 0)
+    
+     this.refs.test.innerHTML =` <div class"container"><div class="row "> <div class="col s12 m8 offset-m2 card-confirm-order"> <div class="card-panel teal"><span class="white-text">
+    <ul> <li> ${ allItems } </li><li>Total:$ ${total}</li></ul></span></div></div></div>`
       }
     }
-    
-  
-    // componentDidUpdate=(prevProp, prevState)=>{
-    //   this.refs.test.innerHTML = `${allItems} $ ${totalPrice}  ${total}`
-    // }
-
+ 
     createCheckbox = (label, label2) => ( 
     <Checkbox label = { label }
-    
       label2 = { label2 }
-      
       handleCheckboxChange = {
         this.activateCheckbox
       }
-      
       key = {label } />
-     
     )
-
+    
     createCheckboxes = () => (
       this.createCheckbox()
 
@@ -95,9 +90,8 @@ componentWillMount = () => {
             return <div>Cargando...</div>
         } else{
             return(
-                  <>
-                  <div contentEditable='true' ref='test' className="prueba"></div>
-               
+    
+           <>    
            <h4>1. Realiza tu pedido</h4>         
                <div className="row ">
                  <div className="col l12  m12   s10 offset-s1">
@@ -196,8 +190,8 @@ componentWillMount = () => {
                          </p>
                   </form></p>)}</li>
                   </ul>
-                             <ul> <li className ="col l6 m6 text-menu"><h4 className="center title-submenu" >Adicionales</h4>{items.filter(item=>item.type ==='Extras-Comida').map(item=><p className=""><form onSubmit={this.handleSendOrder}> <p>
-                          <div> 
+                     <ul> <li className ="col l6 m6 text-menu"><h4 className="center title-submenu" >Adicionales</h4>{items.filter(item=>item.type ==='Extras-Comida').map(item=><p className=""><form onSubmit={this.handleSendOrder}> <p>
+                        <div> 
                           <div><Checkbox 
                       label={item.product}
                      label2={item.price}
@@ -214,8 +208,10 @@ componentWillMount = () => {
                    </div>
                 </div> 
              </div>    
-             <form onSubmit={this.handleSendOrder}>  <button className="btn btn-large btn-send" type="submit">Enviar a cocina</button></form>        
+             <form onSubmit={this.handleSendOrder}>  <button data-target="modal1"className="btn btn-large btn-send  modal-trigger" type="submit">Confirmar orden</button></form>        
                    
+                   
+             <div contentEditable='true' ref='test' className="confirm-order-card"></div>
                    <FooterMenu/>
                    
                    </>

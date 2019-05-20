@@ -1,10 +1,12 @@
 import React from 'react';
 import FooterLogin from "../../components/Footer-login/Footer-login"
 import './Promitions.css'
+import Clock from "../../components/Clock/Clock"
 
 const Promotions = (props)=>(
     
         <div className="">
+        <Clock/>
         <h4>Promociones</h4>
          <div className="row promotions-section">
     <div className="col s12 m4">
