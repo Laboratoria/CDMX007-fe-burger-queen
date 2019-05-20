@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Checkbox from '../Checkboxes/Checkboxes';
 import './fetch-data.css';
+import FooterMenu from '../Footer-login/Footer-menu/Footer-menu'
 
 
 
@@ -204,7 +205,10 @@ componentWillMount = () => {
                    </div>
                 </div> 
              </div>    
-             <form onSubmit={this.handleSendOrder}>  <button className="btn btn-small" type="submit">Enviar a cocina</button></form>        
+             <form onSubmit={this.handleSendOrder}>  <button className="btn btn-large btn-send" type="submit">Enviar a cocina</button></form>        
+                   
+                   <FooterMenu/>
+                   
                    </>
                   
             )

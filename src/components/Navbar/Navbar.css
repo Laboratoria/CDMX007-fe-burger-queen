@@ -16,12 +16,24 @@
 }
 
 .btn-logOut{
-margin-top:35px;
+margin-top:20px;
 font-size: 18px;
 font-weight: 600;
+box-shadow:none;
 }
 
 .hamburguer-menu{
 margin-top:35px;
 right:23%;
+}
+
+.circle{
+
+margin:auto;
+ border:1px #FFFFFF solid !important;
+}
+
+.menu-text{
+    font-size: 18px;
+    line-height: 25px;
 }

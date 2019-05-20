@@ -4,7 +4,8 @@ import fireBase from '../../config-firebase/FireBase';
 import M from 'materialize-css';
 import React, { Component } from "react";
 import "materialize-css/dist/css/materialize.min.css";
-import "./Navbar.css"
+import "./Navbar.css";
+import Waiter from '../../assets/waiter.svg'
 
 class Navbar extends Component {
 
@@ -31,9 +32,20 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-                <ul id="slide-out" className="sidenav">
-                    <li />
-                   
+                <ul id="slide-out" className="sidenav text-white">
+                 <li><div className="user-view">
+                 <div> <img src={Waiter} alt="waiter" className="circle"></img></div>
+                 
+                 <div ><p className="menu-text">Gracias por formar parte <br/> del equipo BQ.</p></div>
+                 </div></li>
+               
+ 
+    
+                    
+                      <li />
+                      <li>
+                        <div className="divider" />
+                    </li>
                     <li>
                        <NavLink  to="/menu">Menú</NavLink></li>
                         <li >
@@ -54,7 +66,7 @@ class Navbar extends Component {
                         <div className="divider" />
                     </li>
                     <li>
-                    <NavLink to="/manual">Manual</NavLink>
+                    <NavLink to="/manual">Manual de procedimientos</NavLink>
                     </li>
                     <li>
                         <div className="divider" />

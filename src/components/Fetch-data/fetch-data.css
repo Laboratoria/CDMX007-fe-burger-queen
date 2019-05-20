@@ -9,11 +9,16 @@
 
 
 }
-
+h4 {
+    font-size: 2.60rem;
+    line-height: 49%;
+    margin: 0.90rem 0 .912rem 0;
+}
 .title-submenu {
     font-family: 'Dancing Script', cursive;
     line-height: 35px;
     letter-spacing: 1px;
+    font-size: 30px;
 }
 
 .card-panel {
@@ -43,9 +48,18 @@
 }
 
 .style-product{
-    font-size:25px !important;
+    font-size:30px !important;
 }
 
 .card-section{
     margin-bottom: -38px !important;
+    }
+    
+    .btn-send{
+        margin-top: 18px;
+
+    position: relative;
+    top: 40px;
+    font-size: 18px;
+    box-shadow:none;
     }
