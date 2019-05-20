@@ -406,6 +406,7 @@ body{
   height: 32px;
   left: 21px;
   top: 570px;
+  margin-top: 20%;
   
   background: #353535;
   
@@ -422,10 +423,12 @@ body{
   height: 32px;
   left: 276px;
   top: 570px;
+  margin-top: 20%;
   margin-left: 58%;
   background: #353535;
   text-align: center;
   letter-spacing: 0.01em;
+  margin-top: 20%;
   text-transform: uppercase;
   
   color: #FFFFFF;
@@ -437,9 +440,9 @@ body{
   height: 32px;
   left: 523px;
   top: 570px;
-  
+  margin-top: 20%;
   background: #353535;
-  
+  margin-top: 20%;
   text-align: center;
   letter-spacing: 0.01em;
   text-transform: uppercase;
@@ -832,6 +835,7 @@ width: 247px;
 height: 32px;
 left: 21px;
 top: 570px;
+margin-top: 20%;
 
 background: #353535;
 
@@ -848,6 +852,7 @@ width: 239px;
 height: 32px;
 left: 276px;
 top: 570px;
+margin-top: 20%;
 
 background: #353535;
 text-align: center;
@@ -863,6 +868,7 @@ width: 222px;
 height: 32px;
 left: 523px;
 top: 570px;
+margin-top: 20%;
 
 background: #353535;
 

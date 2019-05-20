@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from 'semantic-ui-react'
 import {NavLink} from "react-router-dom";
 
 
@@ -13,7 +12,7 @@ render()      {
               </div>
           <div>
   
-            <NavLink to="/FastFood"> <button id="log-in"><i class= "fas fa-check"></i>entrar</button></NavLink>
+            <NavLink to="/FastFood"> <button id="log-in"><i className= "fas fa-check"></i>entrar</button></NavLink>
     
 
 
