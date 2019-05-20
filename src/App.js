@@ -1,48 +1,47 @@
-
 import React, {Component} from 'react';
 import fireBase from './config-firebase/FireBase';
 import LoginFirebase from './views/Login-firebase/Login-firebase';
 import './App.css';
 import RoutesApp from './Routes-App';
-import { createBrowserHistory } from 'history';
- 
+import { createBrowserHistory} from 'history';
+
 const history = createBrowserHistory();
 
-
-
 //Contiene opciones para pasar props y render .Falta establecer la ruta por defecto ¿Window.location?¿Cómo?
-class App extends Component{
-constructor(props){
-  super(props);
-  this.state ={
-    user:{},
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      user: {},
+    }
   }
-}
   authListener() {
     fireBase.auth().onAuthStateChanged((user) => {
       if (user) {
         //actualiza el estado del componente
-        this.setState({ user });
-      
+        this.setState({
+          user
+        });
+
       } else {
-        this.setState({ user: null });
+        this.setState({
+          user: null
+        });
       }
     });
   }
 
+  componentDidMount() {
+    this.authListener();
 
-
-componentDidMount(){
-  this.authListener();
-  
-}
+  }
   render(){
     
     return(
       
-    <div>{this.state.user ? (<div><RoutesApp/>	{history.replace('/menu')}</div>
-    ):(  <LoginFirebase/>  )}
-       </div>
+    <div>
+    {this.state.user ? (<div><RoutesApp/>{history.replace('/menu')}</div> ):(  <LoginFirebase/>  )}
+    </div>
     )
   }
 }
