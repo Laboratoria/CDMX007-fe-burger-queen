@@ -35,40 +35,35 @@ class Navbar extends Component {
                 <ul id="slide-out" className="sidenav text-white">
                  <li><div className="user-view">
                  <div> <img src={Waiter} alt="waiter" className="circle"></img></div>
-                 
                  <div ><p className="menu-text">Gracias por formar parte <br/> del equipo BQ.</p></div>
-                 </div></li>
-               
- 
-    
-                    
+                  </div></li>
                       <li />
-                      <li>
+                         <li>
                         <div className="divider" />
                     </li>
                     <li>
                        <NavLink  to="/menu">Menú</NavLink></li>
                         <li >
                     </li>
-                    <li>
+                      <li>
                         <div className="divider" />
                     </li>
-                    <li>
-                    <NavLink to="/confirm">Confirmar Orden</NavLink>
+                       <li>
+                        <NavLink to="/confirm">Confirmar Orden</NavLink>
                     </li>
-                    <li>
+                      <li>
                         <div className="divider" />
                     </li>
-                    <li>
-                    <NavLink to="/promotions">Promociones</NavLink>
+                       <li>
+                       <NavLink to="/promotions">Promociones</NavLink>
                     </li>
-                    <li>
+                       <li>
                         <div className="divider" />
                     </li>
-                    <li>
-                    <NavLink to="/manual">Manual de procedimientos</NavLink>
+                       <li>
+                        <NavLink to="/manual">Manual de procedimientos</NavLink>
                     </li>
-                    <li>
+                        <li>
                         <div className="divider" />
                     </li >
                     <li className="row"><button className="btn-large btn-logOut col m8 offset-m2"onClick={this.logOut}>Salir</button></li>

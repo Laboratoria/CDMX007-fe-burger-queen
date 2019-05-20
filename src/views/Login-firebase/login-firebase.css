@@ -4,12 +4,9 @@
 }
 
 
-  .row .input-field input:focus {
-    border-bottom: 1px solid 	#66d6dd !important;
-    box-shadow: 0 1px 0 0 	#66d6dd !important
-  }
+
   .register-btn{
-    background-color:#D2B4DE !important;
+
     border:1.5px #fff solid !important;
     box-shadow:none;
 
@@ -25,8 +22,4 @@
   .form-pass{
     background-color: rgba(196, 196, 196, 0.67) !important;
   }
-.form-pass:focus{
- 
-    box-shadow: 0 1px 0 0 #0277bd  !important
-}
 

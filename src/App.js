@@ -4,7 +4,9 @@ import fireBase from './config-firebase/FireBase';
 import LoginFirebase from './views/Login-firebase/Login-firebase';
 import './App.css';
 import RoutesApp from './Routes-App';
-
+import { createBrowserHistory } from 'history';
+ 
+const history = createBrowserHistory();
 
 
 
@@ -38,7 +40,7 @@ componentDidMount(){
     
     return(
       
-    <div>{this.state.user ? (<RoutesApp/>
+    <div>{this.state.user ? (<div><RoutesApp/>	{history.replace('/menu')}</div>
     ):(  <LoginFirebase/>  )}
        </div>
     )
