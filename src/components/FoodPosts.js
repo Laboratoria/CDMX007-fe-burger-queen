@@ -8,7 +8,7 @@ export class FoodGrid extends React.Component{
                     id: 0,
                     name: "Sandwich jamón y queso",
                     price: '50', 
-                    img: "https://ibb.co/VW6DFBt",
+                    img: "hamswiss.png",
                     
                    },
             

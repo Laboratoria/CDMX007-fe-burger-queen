@@ -1,4 +1,4 @@
-export const BreakfastImage = [
+export const BreakfastItems = [
     {
         id: 0,
         name: "Sandwich jamón y queso",

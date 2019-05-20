@@ -7,7 +7,7 @@ export class Options extends React.Component {
 render()      {
         return (  
     <Button.Group>
-        <Button id = "breakfast"  >Desayuno</Button>
+        <Button id = "breakfast">Desayuno</Button>
        <Button id = "lunch">Comida/cena</Button>
        <Input id= "search-product" icon='search' placeholder='Buscar Producto' />
       
@@ -19,6 +19,7 @@ render()      {
  }  
 
 
+ 
  
  
   
