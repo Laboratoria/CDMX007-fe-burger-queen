@@ -1,4 +1,5 @@
 import React from 'react';
+import src from '*.jpeg';
 
 export class FoodGrid extends React.Component{
     render() {
@@ -8,7 +9,7 @@ export class FoodGrid extends React.Component{
                     id: 0,
                     name: "Sandwich jamón y queso",
                     price: '50', 
-                    img: "hamswiss.png",
+                    img: "http://162.144.95.215/~dqphilippines/wp-content/uploads/2015/12/hamswiss.png",
                     
                    },
             

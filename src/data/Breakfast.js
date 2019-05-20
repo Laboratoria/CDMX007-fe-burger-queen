@@ -3,7 +3,7 @@ export const BreakfastItems = [
         id: 0,
         name: "Sandwich jamón y queso",
         price: '50', 
-        img_src: "https://ibb.co/VW6DFBt",
+        img_src: "http://162.144.95.215/~dqphilippines/wp-content/uploads/2015/12/hamswiss.png",
         
        },
 
