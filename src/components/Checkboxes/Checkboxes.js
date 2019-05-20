@@ -25,22 +25,14 @@ class Checkbox extends Component {
 
     return (
       <div className="checkbox">
-
-
-<label>
-  {/* type="text"
-    name="fullname"
-    placeholder="Full name"
-    onChange={this.updateInput)
-    value={this.state.fullname} */}
+        <label>
         <input type="checkbox" 
         name={label}
         value={label}
         value2={label2}
         checked={isChecked}
-        onChange={this.activateCheckboxChange
- }/>
-        <span className="white-text style-product" > {label}  {label2} </span>
+        onChange={this.activateCheckboxChange}/>
+        <span className="white-text style-product" > {label}   </span>
       </label>
       
       </div>
@@ -50,7 +42,7 @@ class Checkbox extends Component {
 
 Checkbox.propTypes = {
   label: PropTypes.string.isRequired,
-  label2:PropTypes.string.isRequired,
+  // label2:PropTypes.string.isRequired,
   handleCheckboxChange: PropTypes.func.isRequired,
 };
 

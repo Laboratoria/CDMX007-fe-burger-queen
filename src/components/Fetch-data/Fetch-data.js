@@ -7,10 +7,12 @@ import FooterMenu from '../Footer-login/Footer-menu/Footer-menu'
 
 const allItems = [];
 const totalPrice = [];
+// const total =[]
 
 class FetchData extends Component {
   constructor(props) {
     super(props);
+   
     this.state = {
       items: [],
       isLoaded: false,
@@ -57,11 +59,15 @@ componentWillMount = () => {
       for(let value of this.sumPrice){
      totalPrice.push(value)
      const total = totalPrice.reduce((a, b)=>{ return a += parseFloat(b) },0)
-      document.getElementById("root").innerHTML=`${allItems} $ ${totalPrice} Total= ${total}`
+     console.log(total)
+     this.refs.test.innerHTML =`${allItems} $ ${totalPrice} ${total}`
       }
     }
     
-    
+  
+    // componentDidUpdate=(prevProp, prevState)=>{
+    //   this.refs.test.innerHTML = `${allItems} $ ${totalPrice}  ${total}`
+    // }
 
     createCheckbox = (label, label2) => ( 
     <Checkbox label = { label }
@@ -90,6 +96,8 @@ componentWillMount = () => {
         } else{
             return(
                   <>
+                  <div contentEditable='true' ref='test' className="prueba"></div>
+               
            <h4>1. Realiza tu pedido</h4>         
                <div className="row ">
                  <div className="col l12  m12   s10 offset-s1">
@@ -181,6 +189,7 @@ componentWillMount = () => {
                           <li className= "col l6 m6 text-menu"> <h4 className="  title-submenu">Bebidas</h4> {items.filter(item=>item.type ==='Bebida-Comida').map(item=><p><form onSubmit={this.handleSendOrder}> <p>
                             <div>   <Checkbox
                       label={item.product}
+                      label2={item.price}
                       handleCheckboxChange={this.activateCheckbox}
                     key={item.product}
                   type="submit"/>  </div>  
@@ -218,9 +227,3 @@ componentWillMount = () => {
 }
 
 export default FetchData;
-
-
-
-
-
-
