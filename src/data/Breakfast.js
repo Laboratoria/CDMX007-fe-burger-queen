@@ -11,14 +11,14 @@ export const BreakfastItems = [
            id: 1,
            name: "Hotcakes",
            price: '45',
-           img_src: "https://ibb.co/7tn5RTz",
+           img_src: "http://pngimg.com/uploads/pancake/pancake_PNG95.png",
        },
 
        {
            id: 2,
            name: "Waffles", 
            price: '40',
-           img_src: "https://ibb.co/9c30PQy"
+           img_src: "http://pngimg.com/uploads/waffle/waffle_PNG57.png"
        }
 ] 
 

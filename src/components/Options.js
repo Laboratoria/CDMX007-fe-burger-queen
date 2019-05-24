@@ -1,26 +1,29 @@
 import React from 'react'
-import { Button } from 'semantic-ui-react'
-import { Input } from 'semantic-ui-react'
+import { BreakfastItems} from '../data/Breakfast'
 
 
-export class Options extends React.Component {
-render()      {
-        return (  
-    <Button.Group>
-        <Button id = "breakfast">Desayuno</Button>
-       <Button id = "lunch">Comida/cena</Button>
-       <Input id= "search-product" icon='search' placeholder='Buscar Producto' />
-      
-  </Button.Group>
-
- )
-   }
-
- }  
-
-
- 
- 
- 
+class FoodButton extends React.Component {
+  constructor (props){
+    super(props)
+    this.state = {
+     food: []
+    };
+  }
   
+  changeColor() {
+    console.log(BreakfastItems)
+    this.setState({
+      color: 'red'
+    })
+  }
+  render(){
+    return (
 
+      <div>
+        <button onClick = {this.changeColor.bind(this)} style = {{background: this.state.color}}>change color</button>  
+         </div> 
+    )
+  }
+}
+
+export default FoodButton; 

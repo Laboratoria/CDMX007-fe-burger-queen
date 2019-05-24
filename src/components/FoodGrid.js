@@ -1,20 +1,45 @@
 import React from 'react';
-import { Grid } from 'semantic-ui-react';
-import BreakfastFont from './BreakfastFont';
-export class FoodGrid extends React.Component {
-render()      { 
-  
-        return (  
-          <div id = "grid-menu">
-            <Grid columns='equal' divided inverted padded>
-                 
-            <Grid.Row color='black' textAlign='center'> 
-                <BreakfastFont></BreakfastFont>
-            </Grid.Row>
-          </Grid>
-          </div>
- )
-   }
 
- }  
- 
+class FoodGrid extends React.Component {
+   
+    state = { message: null };
+  
+    renderDivs = () =>
+      [1, 2, 3].map(divId => (
+       
+        <div
+          key={divId}
+          data-div_id={divId}
+          data-div_name={`Div ${divId}`}
+          onClick={this.handleDivClicked}
+        >
+          Div {divId}
+        </div>
+      ));
+  
+
+    handleDivClicked = ev => {
+      this.setState({
+        
+        message: `Clicked div Id ${ev.currentTarget.dataset.div_id}, name ${
+          ev.currentTarget.dataset.div_name
+        }`
+      });
+    };
+  
+    render() {
+      return (
+        <div className="App">
+          <div>Click on one of the DIVs below:</div>
+          {this.renderDivs()}
+          {this.state.message && (
+            <div className="alert alert-primary">{this.state.message}</div>
+          )}
+        </div>
+      );
+    }
+  }
+  
+  
+
+export default FoodGrid; 
