@@ -5,9 +5,9 @@ import FooterMenu from '../Footer-login/Footer-menu/Footer-menu'
 
 
 
-const allItems = [];
-const totalPrice = [];
-// const total =[]
+// const allItems = [];
+// const totalPrice = [];
+
 
 class FetchData extends Component {
   constructor(props) {
@@ -16,9 +16,14 @@ class FetchData extends Component {
     this.state = {
       items: [],
       isLoaded: false,
-      value: allItems
+      allItems:[],
+      totalPrice:[],
+      sign: "$"
+    
     }
   }
+  
+  
 componentDidMount() {
   fetch('https://burguer-queen-2efea.firebaseio.com/products.json')
     .then(res => res.json())
@@ -33,38 +38,38 @@ componentDidMount() {
 
 
 componentWillMount = () => {
-  this.selectedProducts = new Set()
+  this.selectedProducts = new Set();
   this.sumPrice = new Set()
 
   }
   
 activateCheckbox = (label, label2) => {
-      if (this.selectedProducts.has([label] + [label2]) && (this.sumPrice.has([label2]))) {
-        this.selectedProducts.delete([label] + [label2])
+      if (this.selectedProducts.has([label]) &&(this.selectedProduct.has([label2])) && (this.sumPrice.has([label2]))) {
+        this.selectedProducts.delete([label]) 
         this.sumPrice.delete([label2]);
       } else {
-        this.selectedProducts.add([label] + [label2]);
+       
+        this.selectedProducts.add([label]) &&this.selectedProducts.add(this.state.sign +[label2])
+      
         this.sumPrice.add([label2])
       }
     }
     
+    
  handleSendOrder = formSubmitEvent => {
      formSubmitEvent.preventDefault()
-
      for (let value of this.selectedProducts) {
-       console.log(value)
-       allItems.push(value)
-
+       this.state.allItems.push(value) 
      };
-
-     for (let value of this.sumPrice) {
-       totalPrice.push(value)
-       const total = totalPrice.reduce((a, b) => {
-         return a += parseFloat(b)
-       }, 0)
+     
     
-     this.refs.test.innerHTML =` <div class"container"><div class="row "> <div class="col s12 m8 offset-m2 card-confirm-order"> <div class="card-panel teal"><span class="white-text">
-    <ul> <li> ${ allItems } </li><li>Total:$ ${total}</li></ul></span></div></div></div>`
+     for (let value of this.sumPrice) {
+       this.state.totalPrice.push(value)
+        const total = this.state.totalPrice.reduce((a, b) => {
+         return a += parseFloat(b)
+       }, 0)  
+     this.refs.printOrder.innerHTML =` <div class"container"><div class="row "> <div class="col s12 m8 offset-m2 card-confirm-order"> <div class="card-panel teal"><span class="white-text">
+    <ul> <li> ${this.state.allItems} </li><li>Total: $ ${total}</li></ul></span></div></div></div>`
       }
     }
  
@@ -93,6 +98,7 @@ activateCheckbox = (label, label2) => {
     
            <>    
            <h4>1. Realiza tu pedido</h4>         
+           {/* Componente 1 */}
                <div className="row ">
                  <div className="col l12  m12   s10 offset-s1">
                    <div className="card-panel ">
@@ -133,7 +139,10 @@ activateCheckbox = (label, label2) => {
                  </div> 
                      </div>  
                       </div>    
+                      
+                      {/* Componente 2 */}
                  <div className="row ">
+                 {/* Componente 3 */}
                   <div className="col l12  m12   s10 offset-s1">
                    <div className="card-panel ">
                     <span className="card-style white-text">
@@ -211,7 +220,10 @@ activateCheckbox = (label, label2) => {
              <form onSubmit={this.handleSendOrder}>  <button data-target="modal1"className="btn btn-large btn-send  modal-trigger" type="submit">Confirmar orden</button></form>        
                    
                    
-             <div contentEditable='true' ref='test' className="confirm-order-card"></div>
+             <div contentEditable='true' ref='printOrder' className="confirm-order-card"></div>
+             
+             
+             
                    <FooterMenu/>
                    
                    </>
