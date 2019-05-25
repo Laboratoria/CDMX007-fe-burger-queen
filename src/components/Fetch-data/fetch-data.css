@@ -63,8 +63,11 @@ font-size: 28px;
 
     position: relative;
     top: 40px;
-    font-size: 18px;
+    font-size: 28px;
     box-shadow:none;
+    text-transform: capitalize !important;
+    font-family: 'Neucha', cursive;
+  
     }
     
     .card-confirm-order{

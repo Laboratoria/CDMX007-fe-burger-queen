@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component} from 'react';
 import Checkbox from '../Checkboxes/Checkboxes';
 import './fetch-data.css';
 import FooterMenu from '../Footer-login/Footer-menu/Footer-menu'
+import Showdata from './Showdata.js/Showdata';
+ 
+ 
 
 
 
@@ -18,6 +21,7 @@ class FetchData extends Component {
       isLoaded: false,
       allItems:[],
       totalPrice:[],
+      handleSendOrder:this.handleSendOrder,
       sign: "$"
     
     }
@@ -56,8 +60,7 @@ activateCheckbox = (label, label2) => {
     }
     
     
- handleSendOrder = formSubmitEvent => {
-     formSubmitEvent.preventDefault()
+ handleSendOrder = () => {
      for (let value of this.selectedProducts) {
        this.state.allItems.push(value) 
      };
@@ -68,6 +71,7 @@ activateCheckbox = (label, label2) => {
         const total = this.state.totalPrice.reduce((a, b) => {
          return a += parseFloat(b)
        }, 0)  
+       
      this.refs.printOrder.innerHTML =` <div class"container"><div class="row "> <div class="col s12 m8 offset-m2 card-confirm-order"> <div class="card-panel teal"><span class="white-text">
     <ul> <li> ${this.state.allItems} </li><li>Total: $ ${total}</li></ul></span></div></div></div>`
       }
@@ -217,10 +221,11 @@ activateCheckbox = (label, label2) => {
                    </div>
                 </div> 
              </div>    
-             <form onSubmit={this.handleSendOrder}>  <button data-target="modal1"className="btn btn-large btn-send  modal-trigger" type="submit">Confirmar orden</button></form>        
-                   
-                   
+             <button className="btn btn-large btn-send"  onClick={this.handleSendOrder.bind(this)}>Confirmar orden</button>
              <div contentEditable='true' ref='printOrder' className="confirm-order-card"></div>
+             <Showdata title={this.handleSendOrder}/>
+         
+            
              
              
              

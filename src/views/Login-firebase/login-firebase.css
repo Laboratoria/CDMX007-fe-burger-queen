@@ -6,20 +6,24 @@
 
 
   .register-btn{
-
-    border:1.5px #fff solid !important;
-    box-shadow:none;
-
-    top:15px;
+    position:relative;
+    top:21px;
+    font-size:18px;
+    cursor: pointer;
+    text-decoration: underline !important;
   }
 
   .login-btn{
     box-shadow:none;
-
+    text-transform: capitalize !important;
+    font-family: 'Neucha', cursive;
+    font-size:18px  !important;
     top:15px;
   }
 
   .form-pass{
     background-color: rgba(196, 196, 196, 0.67) !important;
+    font-family: 'Neucha', cursive !important;
+    font-size:18px  !important;
   }
 

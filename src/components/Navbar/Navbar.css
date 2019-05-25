@@ -1,9 +1,9 @@
-.sidenav{
+.sidenav {
     background-color: rgba(202, 163, 163, 0.99)
 }
 
 .sidenav li>a {
-    margin-top:15px;
+    margin-top: 15px;
     color: #FFFFFF;
     display: block;
     font-size: 25px;
@@ -11,29 +11,29 @@
     height: 99px;
     line-height: 114px;
     padding: 0 10px;
-   
-    
 }
 
-.btn-logOut{
-margin-top:20px;
-font-size: 18px;
-font-weight: 600;
-box-shadow:none;
+.btn-logOut {
+    margin-top: 20px;
+    font-size: 25px;
+    box-shadow: none;
+    text-transform: capitalize !important;
+    font-family: 'Neucha', cursive;
+
 }
 
-.hamburguer-menu{
-margin-top:35px;
-right:23%;
+.hamburguer-menu {
+    margin-top: 35px;
+    right: 23%;
 }
 
-.circle{
+.circle {
 
-margin:auto;
- border:1px #FFFFFF solid !important;
+    margin: auto;
+    border: 1px #FFFFFF solid !important;
 }
 
-.menu-text{
+.menu-text {
     font-size: 18px;
     line-height: 25px;
 }

@@ -8,7 +8,7 @@ import './enter-button.css';
 class EnterButton extends React.Component{
     render(){
         return  <a href=" "className="waves-effect waves-light btn grey darken-4 enter-btn">
-          <Link to ="/menu" className="link" >Ingresar</Link></a>
+          <Link to ="/menu" className="link" >Ingasdfghresar</Link></a>
     }
 }
 
