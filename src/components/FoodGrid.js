@@ -1,40 +1,36 @@
 import React from 'react';
-import { BreakfastItems} from '../data/Breakfast'
+import Options from "./Options";
 
 class FoodGrid extends React.Component {
-   
-    state = { message: null };
-  
-    renderDivs = () =>
-    BreakfastItems.map(desayuno => (
-       
-        <div
-          key={desayuno.id}
-          data-div_id={desayuno.id}
-          data-div_name={`name ${desayuno.name}`}
-          data-desayuno_precio={desayuno.price}
-        
-        >
-          <img src={desayuno.img_src} alt= "desayuno"/>
-        </div>
-      ));
-  
-
+  constructor(props){
+    super(props);
+    this.state ={
+      breakfastToggle: false,
+    
+    }
+  }
+    
+    toggleDivs = (event)=>{
+      console.log("hola mundo me falta logica");
+      this.setState({
+        breakfastToggle: !this.state.breakfastToggle
+      });
+    }
   
     render() {
       return (
         <div className="App">
-         
-             <button id = "breakfast"  onClick={() => this.renderDivs()} >change color</button>  
-          
-          {this.state.message && (
-            <div className="alert alert-primary">{this.state.message}</div>
-          )}
+             <button className = "breakfast" onClick={this.toggleDivs.bind(this)}>change color</button> 
+             {this.state.breakfastToggle ?
+            <Options/> :
+           null
+        }
+             
         </div>
       );
     }
   }
-  
+ 
   
 
 export default FoodGrid; 

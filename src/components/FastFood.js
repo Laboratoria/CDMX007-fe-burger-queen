@@ -1,6 +1,6 @@
 import React from 'react';
 import {  Navigation } from "./Navigation";
-import Options from "./Options";
+
 import  FoodGrid  from "./FoodGrid";
 import {Takeout} from './Takeout';
 import  {Additional} from './Additional';
@@ -20,7 +20,7 @@ class App extends React.Component {
                   
                   <h2 align = "center" color= "white">Queen</h2>
                  
-                  <Options/> <br/>
+                  <br/>
                   <Additional/>
                   <FoodGrid/> 
                   <Takeout/>
