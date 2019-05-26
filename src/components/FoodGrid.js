@@ -1,37 +1,32 @@
 import React from 'react';
+import { BreakfastItems} from '../data/Breakfast'
 
 class FoodGrid extends React.Component {
    
     state = { message: null };
   
     renderDivs = () =>
-      [1, 2, 3].map(divId => (
+    BreakfastItems.map(desayuno => (
        
         <div
-          key={divId}
-          data-div_id={divId}
-          data-div_name={`Div ${divId}`}
-          onClick={this.handleDivClicked}
+          key={desayuno.id}
+          data-div_id={desayuno.id}
+          data-div_name={`name ${desayuno.name}`}
+          data-desayuno_precio={desayuno.price}
+        
         >
-          Div {divId}
+          <img src={desayuno.img_src} alt= "desayuno"/>
         </div>
       ));
   
 
-    handleDivClicked = ev => {
-      this.setState({
-        
-        message: `Clicked div Id ${ev.currentTarget.dataset.div_id}, name ${
-          ev.currentTarget.dataset.div_name
-        }`
-      });
-    };
   
     render() {
       return (
         <div className="App">
-          <div>Click on one of the DIVs below:</div>
-          {this.renderDivs()}
+         
+             <button id = "breakfast"  onClick={() => this.renderDivs()} >change color</button>  
+          
           {this.state.message && (
             <div className="alert alert-primary">{this.state.message}</div>
           )}
