@@ -1,22 +1,22 @@
 import React from 'react';
 import {BreakfastItems} from '../data/Breakfast';
-import ModalModalExample from './Modal'; 
-import { Button, Header, Image, Modal } from 'semantic-ui-react'
+import { Button, Modal } from 'semantic-ui-react';
+
+
 class FoodButton extends React.Component {
-  constructor(props){
-    super(props);   
-  }
+
+
  
   renderDivs = () =>{     
     
    return BreakfastItems.map(desayuno => (
-      <div
+      <div className = "divRender"
 
         key={desayuno.id}
         data-div_id={desayuno.id}
         data-div_name={`name ${desayuno.name}`}
-        data-desayuno_precio={desayuno.price} >NOMBRE: {desayuno.name}
-        <img src={desayuno.img_src} alt= "desayuno" width="307vh"/>
+        data-desayuno_precio={desayuno.price} > {desayuno.name}
+        <img src={desayuno.img_src} alt= "desayuno" width="157vh"/>
         <Modal header={desayuno.name} content={this.contetModalBuilder(desayuno)} trigger={<Button>Show</Button>} image="true"/>
       </div>
        

@@ -7,10 +7,10 @@ export class Navigation extends React.Component{
         return (
             <div className = "nav-wrapper">
             <div id = "navlinks">
-                <NavLink  to = "Promos">PROMOS</NavLink>
-                <NavLink to = "NewOrder" >Nueva Orden</NavLink>
-                <NavLink to = "/OrderHistory" >Ordenes</NavLink>
-                <NavLink id = "logout" to = "/" >Cerrar Sesión</NavLink>
+                <NavLink  to = "Promos" id="promo" className="navlinks" >PROMOS</NavLink>
+                <NavLink to = "NewOrder" className="navlinks">Nueva Orden</NavLink>
+                <NavLink to = "/OrderHistory"className="navlinks" >Ordenes</NavLink>
+                <NavLink id = "logout" to = "/" className="navlinks">Cerrar Sesión</NavLink>
             </div>
             </div>
         )

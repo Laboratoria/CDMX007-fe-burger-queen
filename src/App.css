@@ -1,17 +1,9 @@
 body{
   background-color: #151515;
   height: 100vh;
-  width: 100%;
 }
 
-.container {
-  display: grid;
-  height: 100%;
-  grid-gap: 5px;
-  grid-template-columns: 25vw 25vw 25vw 25vw;
-  grid-template-rows: repeat(2, 100px);
-  
-}
+
 
 @media only screen and (min-width : 900px) {
   #burger-home{
@@ -82,7 +74,7 @@ body{
     font-weight: 600;
     font-size: 40px;
     line-height: 48px;
-    /* or 120% */
+ 
     
     text-align: center;
     letter-spacing: 0.03em;
@@ -129,13 +121,14 @@ body{
   left: 40%;
   top: 78.41%;
   bottom: 14.05%;
-  margin-left: 4%;
+  margin-left: 6%;
 
   background: #FFB400;
   box-shadow: 0px 1px 0px #848688;
     
     background: #FFB400;
     box-shadow: 0px 1px 0px #848688;
+    border: 0ch;
   }
   
 }
