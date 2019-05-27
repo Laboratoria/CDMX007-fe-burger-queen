@@ -15,9 +15,10 @@ class FoodButton extends React.Component {
         key={desayuno.id}
         data-div_id={desayuno.id}
         data-div_name={`name ${desayuno.name}`}
-        data-desayuno_precio={desayuno.price} > {desayuno.name}
-        <img src={desayuno.img_src} alt= "desayuno" width="157vh"/>
-        <Modal header={desayuno.name} content={this.contetModalBuilder(desayuno)} trigger={<Button>Show</Button>} image="true"/>
+        data-desayuno_precio= {desayuno.name} > {desayuno.price} {desayuno.name}
+        <img src={desayuno.img_src} alt= "desayuno"/>
+
+        <Modal id= "modal-food" header={desayuno.name} content={this.contetModalBuilder(desayuno)} trigger={<Button className = "divClick"></Button>} image="true"/>
       </div>
        
     ))

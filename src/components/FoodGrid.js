@@ -20,7 +20,7 @@ class FoodGrid extends React.Component {
     render() {
       return (
         <div className="App">
-             <button className = "breakfast" onClick={this.toggleDivs.bind(this)}>change color</button> 
+             <button className = "breakfast" onClick={this.toggleDivs.bind(this)}>Desayuno</button> 
              {this.state.breakfastToggle ?
             <Options/> :
            null
