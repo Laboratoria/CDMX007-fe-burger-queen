@@ -1,29 +1,24 @@
-import React, { Component} from 'react';
+import React, { Component, Fragment} from 'react';
 import Checkbox from '../Checkboxes/Checkboxes';
 import './fetch-data.css';
-import FooterMenu from '../Footer-login/Footer-menu/Footer-menu'
-import Showdata from './Showdata.js/Showdata';
- 
- 
+import FooterMenu from '../Footer-login/Footer-menu/Footer-menu';
 
 
-
-// const allItems = [];
-// const totalPrice = [];
 
 
 class FetchData extends Component {
   constructor(props) {
     super(props);
-   
     this.state = {
       items: [],
       isLoaded: false,
       allItems:[],
       totalPrice:[],
+      printTime: null,
       handleSendOrder:this.handleSendOrder,
-      sign: "$"
-    
+      sign: "$",
+      showElements:true,
+      hideElements:false
     }
   }
   
@@ -37,14 +32,22 @@ componentDidMount() {
         items: json,
       })
     })
+    setInterval( () => {
+      this.setState({
+        printTime : new Date().toLocaleString()
+      })
+    },1000)
+   
+  
 
-}
+  }
+ 
+  
 
 
 componentWillMount = () => {
   this.selectedProducts = new Set();
   this.sumPrice = new Set()
-
   }
   
 activateCheckbox = (label, label2) => {
@@ -52,9 +55,7 @@ activateCheckbox = (label, label2) => {
         this.selectedProducts.delete([label]) 
         this.sumPrice.delete([label2]);
       } else {
-       
         this.selectedProducts.add([label]) &&this.selectedProducts.add(this.state.sign +[label2])
-      
         this.sumPrice.add([label2])
       }
     }
@@ -72,10 +73,17 @@ activateCheckbox = (label, label2) => {
          return a += parseFloat(b)
        }, 0)  
        
-     this.refs.printOrder.innerHTML =` <div class"container"><div class="row "> <div class="col s12 m8 offset-m2 card-confirm-order"> <div class="card-panel teal"><span class="white-text">
-    <ul> <li> ${this.state.allItems} </li><li>Total: $ ${total}</li></ul></span></div></div></div>`
+     this.refs.printOrder.innerHTML =` <div class"container"><h4 class="center">Revisa tu pedido</h4><div class="row confirm-information"> <div class="col s12 m10 offset-m1 card-confirm-order"> <div class="card-color"><span class="white-text text-on-ticket">
+     <div class="col m4 offset-m8 printTime">${this.state.printTime}</div>
+   
+    <ul> <li> ${this.state.allItems} </li><li class="col m4 offset-m8">Total: $ ${total}</li></ul>
+    </span>
+   </div></div></div> `
       }
-    }
+      
+      this.hideElements()
+      this.showElement()
+ }
  
     createCheckbox = (label, label2) => ( 
     <Checkbox label = { label }
@@ -86,11 +94,32 @@ activateCheckbox = (label, label2) => {
       key = {label } />
     )
     
+    
     createCheckboxes = () => (
       this.createCheckbox()
 
     )
-
+    hideElements= ()=>(
+    this.setState({
+    showElements:false,
+    }) 
+    )
+    
+    
+    showElement = ()=>(
+  this.setState({
+  hideElements:true,
+  })
+    )
+    
+    handleCancelOrder=()=>(    
+      window.location.reload()
+    )
+    handleSendKitchen=()=>(
+    alert('¡Listo!, tu pedido se ha enviado a cocina.')
+    )
+    
+    
     render(){
   
         let { isLoaded, items} = this.state;
@@ -100,9 +129,13 @@ activateCheckbox = (label, label2) => {
         } else{
             return(
     
-           <>    
-           <h4>1. Realiza tu pedido</h4>         
-           {/* Componente 1 */}
+           <Fragment> 
+           {
+           this.state.showElements?
+           <div>  
+           <h4> Realiza tu pedido</h4>         
+       
+         
                <div className="row ">
                  <div className="col l12  m12   s10 offset-s1">
                    <div className="card-panel ">
@@ -142,11 +175,9 @@ activateCheckbox = (label, label2) => {
             </span>     
                  </div> 
                      </div>  
-                      </div>    
-                      
-                      {/* Componente 2 */}
+                      </div>      
                  <div className="row ">
-                 {/* Componente 3 */}
+               
                   <div className="col l12  m12   s10 offset-s1">
                    <div className="card-panel ">
                     <span className="card-style white-text">
@@ -188,6 +219,9 @@ activateCheckbox = (label, label2) => {
                    </div>
                 </div> 
              </div>
+     
+               
+               
               <div className="row ">
                   <div className="col l12  m12   s10 offset-s1">
                    <div className="card-panel ">
@@ -222,16 +256,38 @@ activateCheckbox = (label, label2) => {
                 </div> 
              </div>    
              <button className="btn btn-large btn-send"  onClick={this.handleSendOrder.bind(this)}>Confirmar orden</button>
-             <div contentEditable='true' ref='printOrder' className="confirm-order-card"></div>
-             <Showdata title={this.handleSendOrder}/>
-         
+            </div>
+               :null
+               }      
+               
+               
+               <div>
+               
+             <div contentEditable='true' ref='printOrder' className="confirm-order-card"> </div>
+             
+           
+             
             
+             {this.state.hideElements?
+       <div className="order-menu row">
+       <div className="col m10 offset-m1 buttons-cancel-confirm">
+       <button className="btn-large col m3 offset-m2 btn-cancel" onClick={this.handleCancelOrder}><i class="fas fa-times"></i> Cancelar pedido</button>
+       <button className="btn-large col m3 offset-m2 btn-kitchen" onClick={this.handleSendKitchen}><i class="fas fa-check"></i> Enviar a cocina</button>
+       </div>
+
+       </div>
+             :null
+             }
+             
+         </div>  
              
              
              
                    <FooterMenu/>
                    
-                   </>
+                  
+                   
+                   </Fragment>
                   
             )
         }

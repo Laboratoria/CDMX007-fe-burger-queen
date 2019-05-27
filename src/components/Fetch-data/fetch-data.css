@@ -70,8 +70,43 @@ font-size: 28px;
   
     }
     
-    .card-confirm-order{
-    position:relative;
-    top:65px !important;
+   
+    .modal-trigger{
     
+    top:50px;
+    }
+    
+    .order-menu{
+    
+    min-height: 95vh;
+    }
+    
+    .card-color{
+    background-color: #dd6d66;
+    }
+    
+    .printTime{
+    font-size:19px;
+    }
+    
+    .text-on-ticket{
+    
+    font-size:30px;
+    }
+    
+    .confirm-information{
+    
+        position:relative;
+        top:50px !important;
+    }
+    .buttons-cancel-confirm{
+    
+    position:relative;
+    top:300px !important;
+    }
+    .btn-cancel, .btn-kitchen{
+        font-size: 22px;
+        text-transform: capitalize !important;
+        font-family: 'Neucha', cursive;
+        box-shadow:none;
     }

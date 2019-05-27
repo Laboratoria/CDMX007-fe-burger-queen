@@ -8,11 +8,8 @@ class Checkbox extends Component {
 
   activateCheckboxChange = () => {
     const { handleCheckboxChange, label, label2 } = this.props;
-
     this.setState(({ isChecked }) => (
-      {
-        isChecked: !isChecked,
-      }
+      {isChecked: !isChecked,}
     ));
 
     handleCheckboxChange(label, label2);
@@ -42,7 +39,6 @@ class Checkbox extends Component {
 
 Checkbox.propTypes = {
   label: PropTypes.string.isRequired,
-  // label2:PropTypes.string.isRequired,
   handleCheckboxChange: PropTypes.func.isRequired,
 };
 

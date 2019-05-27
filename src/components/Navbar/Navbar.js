@@ -49,23 +49,17 @@ class Navbar extends Component {
                         <div className="divider" />
                     </li>
                        <li>
-                        <NavLink to="/confirm">Confirmar Orden</NavLink>
-                    </li>
-                      <li>
-                        <div className="divider" />
-                    </li>
-                       <li>
                        <NavLink to="/promotions">Promociones</NavLink>
                     </li>
                        <li>
                         <div className="divider" />
                     </li>
-                       {/* <li>
+                       <li>
                         <NavLink to="/manual">Manual de procedimientos</NavLink>
                     </li>
                         <li>
                         <div className="divider" />
-                    </li > */}
+                    </li >
                     <li className="row"><button className="btn-large btn-logOut col m8 offset-m2"onClick={this.logOut}>Salir</button></li>
                 </ul>
                 <div  data-target="slide-out" className="sidenav-trigger row" >
