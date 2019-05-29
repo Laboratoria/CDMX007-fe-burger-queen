@@ -1,19 +1,50 @@
 import React from 'react';
 import { Button, Header, Image, Modal } from 'semantic-ui-react'
 
+class ModalReceipt extends React.Component {
+  constructor(props) {
+    super(props)
+    this.props.desayuno(this, {});
+    this.state = {
+      modalOpen: false
+    }
+  }
 
-const ModalModalExample = () => (
-  <Modal trigger={<Button>Show Modal</Button>}>
-    <Modal.Header>Select a Photo</Modal.Header>
-    <Modal.Content image>
-      <Image wrapped size='medium' src='https://react.semantic-ui.com/images/avatar/large/rachel.png' />
-      <Modal.Description>
-        <Header>Default Profile Image</Header>
-        <p>We've found the following gravatar image associated with your e-mail address.</p>
-        <p>Is it okay to use this photo?</p>
-      </Modal.Description>
-    </Modal.Content>
-  </Modal>
-)
+ModalModalExample = () => {
+  return <Modal id= "modal-food" header={this.props.desayuno.name} 
+  content={this.contetModalBuilder(this.props.desayuno)} 
+  open={this.props.desayuno}
+  onClose={this.handleToggle}
+  trigger={<Button className = "divClick">Open me</Button>} image="true"/>
+}
 
-export default ModalModalExample;
+handleToggle = ()=>{
+  this.setState = {
+    modalOpen: !this.state.modalOpen
+  }
+}
+
+contetModalBuilder = (breakfast)=>{
+  return(
+    <div> <img  src={breakfast.img_src}  alt= "desayuno" width="307vh"/>
+    <hr></hr>
+      <button className="btn brn-success">AL COMEDOR</button>
+      <button className="btn brn-success">PARA LLEVAR</button>
+      <button className="btn brn-success">A DOMICILIO</button>
+      <hr></hr>
+     <div className="ui input"> <input type="number" min="0"></input></div>
+    </div>
+  )
+}
+
+render() {
+  return (
+    <div>      
+      {this.ModalModalExample()}      
+    </div>
+  
+  );
+}
+}
+
+export default ModalReceipt;
