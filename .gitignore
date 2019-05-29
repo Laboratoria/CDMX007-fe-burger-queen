@@ -8,6 +8,8 @@ package-lock.json
 /tests/e2e/videos/
 /tests/e2e/screenshots/
 
+/test/unit/coverage/
+
 # local env files
 .env.local
 .env.*.local
