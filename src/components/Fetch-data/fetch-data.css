@@ -1,3 +1,14 @@
+
+.veggie-menu {
+    position: relative;
+    top: -16px;
+    left: 10%;
+    
+    
+}
+
+
+
 .card-style {
     /* text-align: 
    
@@ -24,7 +35,7 @@ h4 {
 .card-panel {
     border-radius: 5px;
     padding: 0px;
-    background: rgba(202, 165, 163, 0.99) !important;
+    background: #9faefe !important;
 
 }
 
@@ -43,11 +54,6 @@ h4 {
 font-size: 28px;
 }
 
-.veggie-menu{
-    position:relative;
-    top:55px;
-    left:10%;
-}
 
 .style-product{
     font-size:30px !important;
@@ -82,7 +88,9 @@ font-size: 28px;
     }
     
     .card-color{
-    background-color: #dd6d66;
+    /* background-color: #dd6d66; */
+    background-color: #536dfe;
+   
     }
     
     .printTime{
@@ -104,9 +112,42 @@ font-size: 28px;
     position:relative;
     top:300px !important;
     }
+    
+    .btn-kitchen{
+    position:relative;
+    top:15px !important;
+    }
     .btn-cancel, .btn-kitchen{
         font-size: 22px;
         text-transform: capitalize !important;
         font-family: 'Neucha', cursive;
         box-shadow:none;
+    }
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+   
+        
+    .veggie-menu{
+        position:relative;
+        top:55px;
+        left:10%;
+    }
+    
+    .btn-kitchen{
+      
+        top:0px !important;
+        }
+    
+  }
+
+
+    
+    @media(min-width:1025px){
+    
+    
+        .buttons-cancel-confirm{
+    
+            position:relative;
+            top:170px !important;
+            }
+    
     }

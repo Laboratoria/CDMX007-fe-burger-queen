@@ -1,11 +1,12 @@
 import React from 'react';
-import FooterLogin from "../../components/Footer-login/Footer-login"
+import FooterPromos from "../../components/Footer-login/Footer-promos/Footer-promos"
 import './Promitions.css'
 import Clock from "../../components/Clock/Clock"
 
+
 const Promotions = (props)=>(
     
-        <div className="">
+        <div className="promos">
         <Clock/>
         <h4>Promociones</h4>
          <div className="row promotions-section">
@@ -88,8 +89,8 @@ const Promotions = (props)=>(
       </div>
     </div>
   </div>
-        
-      <FooterLogin/>
+        <FooterPromos/>
+    
     </div>
 );
 

@@ -5,8 +5,9 @@
 body {
   margin: 0;
   padding: 0;
- background-color:#dd6d66;
+ /* background-color:#dd6d66; */
  /* background-color:#D2B4DE  ; */
+ background-color: #536dfe;
   font-family: 'Neucha', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

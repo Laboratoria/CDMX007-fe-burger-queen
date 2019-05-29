@@ -1,6 +1,7 @@
 import firebase from 'firebase';
-  
-  
+import  'firebase/firestore';
+
+ 
   var firebaseConfig = {
     apiKey: "AIzaSyBfS39Yz7rXKWlu8YzS56jy8P5zZLnQol0",
     authDomain: "burguer-queen-2efea.firebaseapp.com",
@@ -12,5 +13,9 @@ import firebase from 'firebase';
   };
 
   const fireBase = firebase.initializeApp(firebaseConfig);
+  
+
+ 
+
 
   export default fireBase;

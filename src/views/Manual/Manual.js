@@ -3,7 +3,8 @@ import React from 'react';
 import './Manual.css'
 const Manual = (props)=>(
     <div className="container">
-      <div className="white black-text manual-text">
+      <div className="manual-text">
+      <div className=" manual-text">
     <h3>Manual de procedimientos</h3>
     <p className="left-align flow-text">En este manual encontrará información sobre alguna de las funciones que usted como 
     mesero de Burguer Queen debe realizar. Usted tiene un lugar muy significativo para nuestra familia
@@ -61,6 +62,7 @@ const Manual = (props)=>(
             </ol>
       
       </p>
+      </div>
       </div>
     </div>
 );

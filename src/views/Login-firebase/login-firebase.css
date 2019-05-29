@@ -1,8 +1,7 @@
-.input-login{
-    position:relative;
-    top:300px;
+.input-login {
+  position: relative;
+  top: 417px;
 }
-
 
 
   .register-btn{
@@ -27,3 +26,30 @@
     font-size:18px  !important;
   }
 
+  @media (min-width: 768px) and (max-width: 1024px)  {
+
+  .input-login {
+      position: relative;
+      top: 352px!important;
+  }
+
+}
+
+
+
+
+
+
+@media (min-width: 1025px) {
+  
+  
+  .input-login {
+    position: relative;
+    top: 270px;
+}
+
+
+
+
+  
+}

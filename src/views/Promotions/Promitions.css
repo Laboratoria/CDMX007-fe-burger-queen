@@ -25,3 +25,18 @@ font-size:18px;
 margin-top:40px;
 
 }
+
+.promos{
+    min-height: 900px;
+    
+    
+    }
+/* @media(min-width:1025px){
+.promos{
+min-height: 900px;
+
+
+}
+
+
+} */

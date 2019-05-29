@@ -2,7 +2,7 @@ import React, { Component, Fragment} from 'react';
 import Checkbox from '../Checkboxes/Checkboxes';
 import './fetch-data.css';
 import FooterMenu from '../Footer-login/Footer-menu/Footer-menu';
-
+// import db from '../../config-firebase/FirestoreConfig';
 
 
 
@@ -18,7 +18,8 @@ class FetchData extends Component {
       handleSendOrder:this.handleSendOrder,
       sign: "$",
       showElements:true,
-      hideElements:false
+      hideElements:false, 
+      Uva:[]
     }
   }
   
@@ -37,7 +38,7 @@ componentDidMount() {
         printTime : new Date().toLocaleString()
       })
     },1000)
-   
+    
   
 
   }
@@ -64,6 +65,8 @@ activateCheckbox = (label, label2) => {
  handleSendOrder = () => {
      for (let value of this.selectedProducts) {
        this.state.allItems.push(value) 
+       
+       
      };
      
     
@@ -74,13 +77,13 @@ activateCheckbox = (label, label2) => {
        }, 0)  
        
      this.refs.printOrder.innerHTML =` <div class"container"><h4 class="center">Revisa tu pedido</h4><div class="row confirm-information"> <div class="col s12 m10 offset-m1 card-confirm-order"> <div class="card-color"><span class="white-text text-on-ticket">
-     <div class="col m4 offset-m8 printTime">${this.state.printTime}</div>
+     <div class="col m4 offset-m8  col s6 offset-s6 printTime">${this.state.printTime}</div>
    
-    <ul> <li> ${this.state.allItems} </li><li class="col m4 offset-m8">Total: $ ${total}</li></ul>
+    <ul> <li> ${this.state.allItems} </li><li class="col m4 offset-m8   s6 offset-s6 ">Total: $ ${total}</li></ul>
     </span>
    </div></div></div> `
       }
-      
+     
       this.hideElements()
       this.showElement()
  }
@@ -115,7 +118,15 @@ activateCheckbox = (label, label2) => {
     handleCancelOrder=()=>(    
       window.location.reload()
     )
+    
+    
+    
     handleSendKitchen=()=>(
+    // db.collection("pedidos").add({
+    // Uva:this.state.allItems
+    // }).then(()=>{
+    // })
+  
     alert('¡Listo!, tu pedido se ha enviado a cocina.')
     )
     
@@ -134,15 +145,13 @@ activateCheckbox = (label, label2) => {
            this.state.showElements?
            <div>  
            <h4> Realiza tu pedido</h4>         
-       
-         
                <div className="row ">
-                 <div className="col l12  m12   s10 offset-s1">
+                 <div className="col l12  m12 s12">
                    <div className="card-panel ">
                      <span className="card-style white-text">
                         <div className="row card-section">
                          <ul>  
-                           <li className= "col l6 m6 text-menu"> 
+                           <li className= "col l6 m6 s12 text-menu"> 
                          <h4 className="  title-submenu">Desayunos</h4>
                        {items.filter(item=>item.type ==='Desayuno').map(item=><p className="center">
                       <form onSubmit={this.handleSendOrder}> <p> 
@@ -157,7 +166,7 @@ activateCheckbox = (label, label2) => {
                  </li>
                  </ul>
                      <ul>
-                      <li className ="col l6 m6 text-menu">
+                      <li className ="col l6 m6 s12 text-menu">
                       <h4 className="center title-submenu" >Bebidas</h4>
                       {items.filter(item=>item.type ==='Bebida-Desayuno').map(item=><p className="center ">
                       <form onSubmit={this.handleSendOrder}> <p>
@@ -177,13 +186,12 @@ activateCheckbox = (label, label2) => {
                      </div>  
                       </div>      
                  <div className="row ">
-               
-                  <div className="col l12  m12   s10 offset-s1">
+                  <div className="col l12  m12  s12">
                    <div className="card-panel ">
                     <span className="card-style white-text">
                       <div className="row card-section"> 
                       <ul>
-                          <li className= "col l6 m6 text-menu"> 
+                          <li className= "col l6 m6 s12 text-menu"> 
                           <h4 className="  title-submenu">Hamburguesas</h4> 
                           {items.filter(item=>item.type ==='Comida').map(item=><p>    
                          <form onSubmit={this.handleSendOrder}> <p>
@@ -199,7 +207,7 @@ activateCheckbox = (label, label2) => {
                           </li>
                           </ul>
                              <ul> 
-                               <li className ="col l6 m6 text-menu veggie-menu">
+                               <li className ="col l6 m6 s12 text-menu veggie-menu">
                                {items.filter(item=>item.type ==='Comida-Vegetariana').map(item=><p className="">
                                <form onSubmit={this.handleSendOrder}> <p>
                                <div><Checkbox 
@@ -223,11 +231,11 @@ activateCheckbox = (label, label2) => {
                
                
               <div className="row ">
-                  <div className="col l12  m12   s10 offset-s1">
+                  <div className="col l12 m12 s12">
                    <div className="card-panel ">
                     <span className="card-style white-text">
                       <div className="row card-section"> <ul>
-                          <li className= "col l6 m6 text-menu"> <h4 className="  title-submenu">Bebidas</h4> {items.filter(item=>item.type ==='Bebida-Comida').map(item=><p><form onSubmit={this.handleSendOrder}> <p>
+                          <li className= "col l6 m6 s12 text-menu"> <h4 className="  title-submenu">Bebidas</h4> {items.filter(item=>item.type ==='Bebida-Comida').map(item=><p><form onSubmit={this.handleSendOrder}> <p>
                             <div>   <Checkbox
                       label={item.product}
                       label2={item.price}
@@ -237,7 +245,7 @@ activateCheckbox = (label, label2) => {
                          </p>
                   </form></p>)}</li>
                   </ul>
-                     <ul> <li className ="col l6 m6 text-menu"><h4 className="center title-submenu" >Adicionales</h4>{items.filter(item=>item.type ==='Extras-Comida').map(item=><p className=""><form onSubmit={this.handleSendOrder}> <p>
+                     <ul> <li className ="col l6 m6 s12 text-menu"><h4 className="center title-submenu" >Adicionales</h4>{items.filter(item=>item.type ==='Extras-Comida').map(item=><p className=""><form onSubmit={this.handleSendOrder}> <p>
                         <div> 
                           <div><Checkbox 
                       label={item.product}
@@ -271,8 +279,8 @@ activateCheckbox = (label, label2) => {
              {this.state.hideElements?
        <div className="order-menu row">
        <div className="col m10 offset-m1 buttons-cancel-confirm">
-       <button className="btn-large col m3 offset-m2 btn-cancel" onClick={this.handleCancelOrder}><i class="fas fa-times"></i> Cancelar pedido</button>
-       <button className="btn-large col m3 offset-m2 btn-kitchen" onClick={this.handleSendKitchen}><i class="fas fa-check"></i> Enviar a cocina</button>
+       <button className="btn-large col m3 offset-m2 col s8 offset-s2 btn-cancel" onClick={this.handleCancelOrder}><i class="fas fa-times"></i> Cancelar pedido</button>
+       <button className="btn-large col m3 offset-m2 col s8 offset-s2 btn-kitchen" onClick={this.handleSendKitchen}><i class="fas fa-check"></i> Enviar a cocina</button>
        </div>
 
        </div>

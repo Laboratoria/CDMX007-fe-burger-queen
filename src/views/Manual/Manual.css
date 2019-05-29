@@ -1,3 +1,23 @@
-.manual-text{
-padding:26px !important;
+
+
+h4 {
+  
+    line-height: 85% !important;
+ 
 }
+
+.manual-text{
+padding:10px !important;
+border:2px solid white;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+
+    h4 {
+  
+        line-height: 35%;
+     
+    }
+    
+  }

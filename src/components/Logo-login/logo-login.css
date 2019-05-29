@@ -1,5 +1,4 @@
 
-
 .App-header,
 .App-header-Two {
   position: absolute;
@@ -17,15 +16,47 @@
 }
 
 .App-header {
-  font-size: 96px;
-  left: 25%;
-  bottom: 34%;
+  font-size: 85px;
+  left: 31%;
+  bottom: 46%;
 }
 
 .App-header-Two {
-  left: 13%;
-  top: 182px;
+  left: 9%;
+  top: 123px;
   font-family: 'Dancing Script', cursive;
-  font-size: 144px;
+  font-size: 128px;
 }
  
+@media (min-width: 768px) and (max-width: 1024px){
+  
+  .App-header {
+    font-size: 92px;
+    left: 19%;
+    bottom: 34%;
+}
+.App-header-Two {
+
+  left: 10%;
+  top: 197px;
+
+}
+
+
+
+
+  
+}
+
+@media (min-width:1025px){
+  .App-header-Two {
+    left: 10%;
+    top: 131px;
+    font-size: 127px;
+}
+.App-header{
+  left: 16%;
+  bottom: 32%;
+}
+
+}

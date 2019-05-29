@@ -1,0 +1,17 @@
+
+  .Footer-promos{
+    display: none;
+    }
+
+@media (min-width: 768px)  {
+  
+
+    .Footer-promos{
+    display:inherit;
+position:relative;
+top:320px;
+}
+    
+  }
+
+

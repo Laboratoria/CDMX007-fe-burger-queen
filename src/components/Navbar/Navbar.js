@@ -60,7 +60,7 @@ class Navbar extends Component {
                         <li>
                         <div className="divider" />
                     </li >
-                    <li className="row"><button className="btn-large btn-logOut col m8 offset-m2"onClick={this.logOut}>Salir</button></li>
+                    <li className="row"><button className="btn-large btn-logOut col m8 offset-m2 s10 offset-s1"onClick={this.logOut}>Salir</button></li>
                 </ul>
                 <div  data-target="slide-out" className="sidenav-trigger row" >
                 <i className="fas fa-bars fa-2x col m1  hamburguer-menu"></i>
