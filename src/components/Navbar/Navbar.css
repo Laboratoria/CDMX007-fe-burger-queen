@@ -1,6 +1,5 @@
 .sidenav {
     background-color: rgba(202, 163, 163, 0.99)
-    /* background-color: #9faefe; */
 }
 
 .sidenav li>a {
@@ -29,7 +28,6 @@
 }
 
 .circle {
-
     margin: auto;
     border: 1px #FFFFFF solid !important;
 }

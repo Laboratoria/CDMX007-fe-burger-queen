@@ -1,70 +1,69 @@
-
 .waiter-img {
-  display:none;
+    display: none;
 }
 
-.hamburguer{
-display:none;
-}
-@media (min-width: 768px) and (max-width: 1024px)  {
-  
-  .input-login {
-    position: relative;
-    top: 261px;
-   
- } 
- 
- .waiter-img {
-  display: inherit;
-  outline: none;
-  position: absolute;
-  border: 0;
-  width: 94px;
-  height: 128px;
-  right: 28%;
-  top: 29%;
-
-}
- 
- .hamburguer {
-  position: absolute;
-  display: inherit;
-  border: 0;
-  outline: none;
-  width: 42px;
-  height: 51px;
-  right: 22.8%;
-  top: 37.2%;
-  
- }
- 
-  
-}
-
-  
-  
-
-@media (min-width:1025px){
-
-  .waiter-img {
-    display: inherit;
-    outline: none;
-    position: absolute;
-    border: 0;
-    width: 94px;
-    height: 128px;
-    right: 29%;
-    top: 23%;
-}
 .hamburguer {
-  display: inherit;
-  outline: none;
-  position: absolute;
-  width: 43px;
-  height: 51px;
-  right: 22.8%;
-  top: 33%;
+    display: none;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .input-login {
+        position: relative;
+        top: 261px;
+
+    }
+
+    .waiter-img {
+        display: inherit;
+        outline: none;
+        position: absolute;
+        border: 0;
+        width: 94px;
+        height: 128px;
+        right: 28%;
+        top: 29%;
+
+    }
+
+    .hamburguer {
+        position: absolute;
+        display: inherit;
+        border: 0;
+        outline: none;
+        width: 42px;
+        height: 51px;
+        right: 22.8%;
+        top: 37.2%;
+
+    }
+
+
+}
+
+
+@media (min-width:1025px) {
+
+    .waiter-img {
+        display: inherit;
+        outline: none;
+        position: absolute;
+        border: 0;
+        width: 94px;
+        height: 128px;
+        right: 29%;
+        top: 23%;
+    }
+
+    .hamburguer {
+        display: inherit;
+        outline: none;
+        position: absolute;
+        width: 43px;
+        height: 51px;
+        right: 22.8%;
+        top: 33%;
+    }
 
 
 }

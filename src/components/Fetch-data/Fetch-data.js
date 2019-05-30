@@ -5,20 +5,19 @@ import FooterMenu from '../Footer-login/Footer-menu/Footer-menu';
 import MenuBreakfast from '../MenuBreakfast/MenuBreakfast';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import OthersMenu from '../OthersMenu/OthersMenu';
-// import db from '../../config-firebase/FirestoreConfig';
+
 
 
 
 export const myFirstContext = React.createContext()
 
-
+ 
 class FetchData extends Component {
   constructor(props) {
     super(props);
     this.state = {
       items: [],
       isLoaded: false,
-      allItems: [],
       totalPrice: [],
       printTime: null,
       handleSendOrder: this.handleSendOrder,
@@ -26,7 +25,6 @@ class FetchData extends Component {
       showElements: true,
       hideElements: false,
       activateCheckbox: this.activateCheckbox,
-      Uva: []
     }
   }
   
@@ -54,36 +52,29 @@ componentWillMount = () => {
 }
 
 activateCheckbox = (label, label2) => {
-  if (this.selectedProducts.has([label]) && (this.selectedProduct.has([label2])) && (this.sumPrice.has([label2]))) {
-    this.selectedProducts.delete([label])
+  if (this.selectedProducts.has([label]) &&(this.selectedProduct.has([label2])) && (this.sumPrice.has([label2]))) {
+    this.selectedProducts.delete([label]) 
     this.sumPrice.delete([label2]);
   } else {
-    this.selectedProducts.add([label]) && this.selectedProducts.add(this.state.sign + [label2])
+    this.selectedProducts.add([label]) &&this.selectedProducts.add(this.state.sign +[label2])
     this.sumPrice.add([label2])
   }
 }
 
 
+
 handleSendOrder = () => {
-    for (let value of this.selectedProducts) {
-      this.state.allItems.push(value)
-
-    };
-
-
-    for (let value of this.sumPrice) {
-      this.state.totalPrice.push(value)
-      const total = this.state.totalPrice.reduce((a, b) => {
-        return a += parseFloat(b)
-      }, 0)
-       
+ this.selectedProducts =Array.from(this.selectedProducts);
+  this.sumPrice = Array.from(this.sumPrice);
+   const total = this.sumPrice.reduce((a,b)=>{
+   return a += parseFloat(b)
+   },0)
      this.refs.printOrder.innerHTML =` <div class"container"><h4 class="center">Revisa tu pedido</h4><div class="row confirm-information"> <div class="col s12 m10 offset-m1 card-confirm-order"> <div class="card-color"><span class="white-text text-on-ticket">
      <div class="col m4 offset-m8  col s6 offset-s6 printTime">${this.state.printTime}</div>
-    <ul> <li> ${this.state.allItems} </li><li class="col m4 offset-m8   s6 offset-s6 ">Total: $ ${total}</li></ul>
+    <ul> <li>${this.selectedProducts}</li><li class="col m4 offset-m8  s6 offset-s6 ">Total: $ ${total}</li></ul>
     </span>
    </div></div></div> `
-      }
-     
+      
       this.hideElements()
       this.showElement()
  }
@@ -104,7 +95,6 @@ handleSendOrder = () => {
       />
     )
 
-
     createCheckboxes = () => (
       this.createCheckbox()
 
@@ -114,7 +104,6 @@ handleSendOrder = () => {
         showElements: false,
       })
     )
-
 
     showElement = () => (
       this.setState({
@@ -128,40 +117,37 @@ handleSendOrder = () => {
 
     
     handleSendKitchen=()=>(
-    // db.collection("pedidos").add({
-    // Uva:this.state.allItems
-    // }).then(()=>{
-    // })
-    alert('¡Listo!, tu pedido se ha enviado a cocina.')
+      alert('¡Listo!, tu pedido se ha enviado a cocina.')
     )
-    
     
     render(){
   
-        let { isLoaded, items} = this.state;
-        console.log(items)
-
+      let { isLoaded} = this.state;
         if(!isLoaded){
             return <div>Cargando...</div>
-        } else{
+        }else{
             return(
            <Fragment> 
            {
              this.state.showElements?
              <div>  
-                  <h4> Realiza tu pedido</h4>      
+                  <h4> Realiza tu pedido</h4>     
                   
-         <myFirstContext.Provider value={this.state}>
-             <MenuBreakfast/>
-               <BurgerMenu/>
-            <OthersMenu/>
-        </myFirstContext.Provider>
-             <button className="btn btn-large btn-send"  onClick={this.handleSendOrder.bind(this)}>Confirmar orden</button>
+          {/*CONTEXT */}
+                         <myFirstContext.Provider value={this.state}>
+                            <MenuBreakfast/>
+                               <BurgerMenu/>
+                             <OthersMenu/>
+                        </myFirstContext.Provider>
+                        
+             <button className="btn btn-large btn-send"  onClick={this.handleSendOrder}>Confirmar orden</button>
             </div>
                :null
                }      
                <div>
              <div contentEditable='true' ref='printOrder' className="confirm-order-card"> </div>
+             
+              {/*CARD TO CANCEL OR CONFIRM MENU*/}
              {this.state.hideElements?
               <div className="order-menu row">
              <div className="col m10 offset-m1 buttons-cancel-confirm">

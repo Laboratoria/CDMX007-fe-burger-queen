@@ -17,26 +17,24 @@ const BurgerMenu = props => (
                               <h4 className="  title-submenu">Hamburguesas</h4> 
                                   {items.filter(item=>item.type ==='Comida').map(item=><p>    
                                <form onSubmit={handleSendOrder}> 
-                             <p><div><Checkbox 
+                             <p><Checkbox 
                          label={item.product}
                          label2={item.price}
                          handleCheckboxChange={activateCheckbox}
                          key={item.product}
                          type="submit"/> 
-                        </div> 
                            </p>
                              </form></p>)}
                         </li></ul>
                         <ul> <li className ="col l6 m6 s12 text-menu veggie-menu">
                                {items.filter(item=>item.type ==='Comida-Vegetariana').map(item=><p className="">
                              <form onSubmit={handleSendOrder}>
-                             <p><div><Checkbox 
+                             <p><Checkbox 
                          label={item.product}
                          label2={item.price}
                          handleCheckboxChange={activateCheckbox}
                          key={item.product}
                          type="submit"/> 
-                        </div>  
                          </p>
                              </form></p>)}
                      </li></ul>

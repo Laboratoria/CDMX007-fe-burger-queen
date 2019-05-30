@@ -1,41 +1,37 @@
-
 .crown {
-  position: absolute;
-  left: -0.3%;
-  right: 79.92%;
-  top: 23.88%;
-  bottom: 44.68%;
+    position: absolute;
+    left: -0.3%;
+    right: 79.92%;
+    top: 23.88%;
+    bottom: 44.68%;
 }
 
 
-  
+
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  
-  
+
+
+
     .crown {
-      position: absolute;
-      left: 5.7%;
-      right: 84.92%;
-      top: 34.88%;
-      bottom: 44.68%;
-  }
-  
-    
-  }
-  
-  @media (min-width:1025px){
+        position: absolute;
+        left: 5.7%;
+        right: 84.92%;
+        top: 34.88%;
+        bottom: 44.68%;
+    }
+
+
+}
+
+@media (min-width:1025px) {
     .crown {
- 
-    left:6.7%;
 
-      top: 32%;
+        left: 6.7%;
 
-  }
-  
-  
-  
-  }
-    
-  
+        top: 32%;
 
+    }
+
+
+
+}

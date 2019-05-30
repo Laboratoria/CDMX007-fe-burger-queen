@@ -2,8 +2,6 @@ import React from 'react'
 import { myFirstContext } from '../Fetch-data/Fetch-data';
 import Checkbox from '../Checkboxes/Checkboxes'
 
-
-
 const MenuBreakfast = props => (
     <div>
         <myFirstContext.Consumer>
