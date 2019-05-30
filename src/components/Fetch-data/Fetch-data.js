@@ -3,7 +3,9 @@ import Checkbox from '../Checkboxes/Checkboxes';
 import './fetch-data.css';
 import FooterMenu from '../Footer-login/Footer-menu/Footer-menu';
 // import db from '../../config-firebase/FirestoreConfig';
+import MenuBreakfast from '../MenuBreakfast/MenuBreakfast'
 
+export const myFirstContext = React.createContext()
 
 
 class FetchData extends Component {
@@ -19,6 +21,9 @@ class FetchData extends Component {
       sign: "$",
       showElements:true,
       hideElements:false, 
+      // createCheckbox:this.createCheckbox,
+      // createCheckboxes:this.createCheckboxes,
+      activateCheckbox:this.activateCheckbox,
       Uva:[]
     }
   }
@@ -39,12 +44,8 @@ componentDidMount() {
       })
     },1000)
     
-  
-
   }
  
-  
-
 
 componentWillMount = () => {
   this.selectedProducts = new Set();
@@ -65,7 +66,6 @@ activateCheckbox = (label, label2) => {
  handleSendOrder = () => {
      for (let value of this.selectedProducts) {
        this.state.allItems.push(value) 
-       
        
      };
      
@@ -144,8 +144,14 @@ activateCheckbox = (label, label2) => {
            {
            this.state.showElements?
            <div>  
-           <h4> Realiza tu pedido</h4>         
-               <div className="row ">
+           <h4> Realiza tu pedido</h4>      
+           {/* //Primer componente */}
+           
+           <myFirstContext.Provider value={this.state}>
+       
+          <MenuBreakfast/>
+        </myFirstContext.Provider>
+               {/* <div className="row ">
                  <div className="col l12  m12 s12">
                    <div className="card-panel ">
                      <span className="card-style white-text">
@@ -184,7 +190,8 @@ activateCheckbox = (label, label2) => {
             </span>     
                  </div> 
                      </div>  
-                      </div>      
+                      </div>       */}
+                 {/* Segundo componente  */}
                  <div className="row ">
                   <div className="col l12  m12  s12">
                    <div className="card-panel ">
@@ -229,13 +236,14 @@ activateCheckbox = (label, label2) => {
              </div>
      
                
-               
+               {/* Tercer componente */}
               <div className="row ">
                   <div className="col l12 m12 s12">
                    <div className="card-panel ">
                     <span className="card-style white-text">
                       <div className="row card-section"> <ul>
-                          <li className= "col l6 m6 s12 text-menu"> <h4 className="  title-submenu">Bebidas</h4> {items.filter(item=>item.type ==='Bebida-Comida').map(item=><p><form onSubmit={this.handleSendOrder}> <p>
+                          <li className= "col l6 m6 s12 text-menu"> <h4 className="  title-submenu">Bebidas</h4> {items.filter(item=>item.type ==='Bebida-Comida').map(item=><p>
+                          {/* <form onSubmit={this.handleSendOrder}> <p>
                             <div>   <Checkbox
                       label={item.product}
                       label2={item.price}
@@ -243,7 +251,10 @@ activateCheckbox = (label, label2) => {
                     key={item.product}
                   type="submit"/>  </div>  
                          </p>
-                  </form></p>)}</li>
+                  </form> */}
+                  
+                  
+                  </p>)}</li>
                   </ul>
                      <ul> <li className ="col l6 m6 s12 text-menu"><h4 className="center title-submenu" >Adicionales</h4>{items.filter(item=>item.type ==='Extras-Comida').map(item=><p className=""><form onSubmit={this.handleSendOrder}> <p>
                         <div> 

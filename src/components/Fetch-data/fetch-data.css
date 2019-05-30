@@ -35,8 +35,8 @@ h4 {
 .card-panel {
     border-radius: 5px;
     padding: 0px;
-    background: #9faefe !important;
-
+ 
+    background: rgba(202, 165, 163, 0.99) !important;
 }
 
 .text-menu {
@@ -89,7 +89,7 @@ font-size: 28px;
     
     .card-color{
     /* background-color: #dd6d66; */
-    background-color: #536dfe;
+    background-color:#D2B4DE  ;
    
     }
     
