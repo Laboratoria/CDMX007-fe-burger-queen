@@ -5,6 +5,7 @@ import FooterMenu from '../Footer-login/Footer-menu/Footer-menu';
 import MenuBreakfast from '../MenuBreakfast/MenuBreakfast';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import OthersMenu from '../OthersMenu/OthersMenu';
+import InputNameOfClient from '../InputNameOfClient/InputNameOfClient';
 
 export const myFirstContext = React.createContext()
 
@@ -22,6 +23,8 @@ class FetchData extends Component {
       showElements: true,
       hideElements: false,
       activateCheckbox: this.activateCheckbox,
+      value: '',
+      handleChange:this.handleChange.bind(this)
     }
   }
   
@@ -68,12 +71,14 @@ handleSendOrder = () => {
    },0)
      this.refs.printOrder.innerHTML =` <div class"container"><h4 class="center">Revisa tu pedido</h4><div class="row confirm-information"> <div class="col s12 m10 offset-m1 card-confirm-order"> <div class="card-color"><span class="white-text text-on-ticket">
      <div class="col m4 offset-m8  col s6 offset-s6 printTime">${this.state.printTime}</div>
+     <div class="col m12 col s12"><p class="offset-s6">Cliente: ${this.state.value}</p></div>
     <ul> <li>${this.selectedProducts}</li><li class="col m4 offset-m8  s6 offset-s6 ">Total: $ ${total}</li></ul>
     </span>
    </div></div></div> `
       
       this.hideElements()
       this.showElement()
+     
  }
    
 //    Función para crear dinámicamente las checkboxes. El label tomará el value de cada item del array.
@@ -94,6 +99,15 @@ handleSendOrder = () => {
       }/>
       
     )
+
+  
+    
+    handleChange=(event)=>(
+    this.setState({
+     value:event.target.value
+    })
+    )
+
 
     createCheckboxes = () => (
       this.createCheckbox()
@@ -116,7 +130,7 @@ handleSendOrder = () => {
     )
 
     handleSendKitchen=()=>(
-      alert('¡Listo!, tu pedido se ha enviado a cocina.')
+      alert('¡Listo!, el pedido de ' + this.state.value + ' se ha enviado a cocina')
     )
     
     render(){
@@ -131,9 +145,16 @@ handleSendOrder = () => {
              this.state.showElements?
              <div>  
                   <h4> Realiza tu pedido</h4>     
-                  
+                  {/* <form onSubmit={this.handleSendOrder}>
+        <label>
+          Name:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form> */}
           {/*CONTEXT */}
                          <myFirstContext.Provider value={this.state}>
+                           <InputNameOfClient/>
                             <MenuBreakfast/>
                                <BurgerMenu/>
                              <OthersMenu/>
