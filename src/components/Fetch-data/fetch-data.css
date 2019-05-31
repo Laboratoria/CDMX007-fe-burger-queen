@@ -1,6 +1,6 @@
 .veggie-menu {
     position: relative;
-    top: -16px;
+    top: -6px;
     left: 10%;
 }
 
@@ -12,8 +12,8 @@
 }
 
 h4 {
-    font-size: 2.60rem;
-    line-height: 49%;
+    font-size: 3rem;
+    line-height: 60%;
     margin: 0.90rem 0 .912rem 0;
 }
 
@@ -28,6 +28,7 @@ h4 {
     border-radius: 5px;
     padding: 0px;
     background: rgba(202, 165, 163, 0.99) !important;
+    margin-bottom:20px;
 }
 
 .text-menu {
@@ -37,7 +38,7 @@ h4 {
     font-size: 22px;
     line-height: 25px;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
 }
 
 .confirm-order-card {
@@ -55,7 +56,7 @@ h4 {
 }
 
 .btn-send {
-    margin-top: 18px;
+    margin-top: 16px;
     position: relative;
     top: 40px;
     font-size: 28px;
@@ -78,7 +79,10 @@ h4 {
     background-color: #D2B4DE;
 
 }
+.productStyle{
+ padding:11px 
 
+}
 .printTime {
     font-size: 19px;
 }
@@ -110,6 +114,16 @@ h4 {
     box-shadow: none;
 }
 
+@media only screen and (min-width: 601px){
+    .veggie-menu {
+        position: relative;
+        top: 47px;
+        left: 10%;
+    }
+
+
+}
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
 
@@ -134,5 +148,8 @@ h4 {
         position: relative;
         top: 170px !important;
     }
+    .veggie-menu {
+        top: 53px;
 
+    }
 }

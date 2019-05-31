@@ -32,7 +32,7 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-                <ul id="slide-out" className="sidenav text-white">
+                <ul id="slide-out" className="sidenav text-white sidenav-fixed">
                  <li><div className="user-view">
                  <div> <img src={Waiter} alt="waiter" className="circle"></img></div>
                  <div ><p className="menu-text">Gracias por formar parte <br/> del equipo BQ.</p></div>

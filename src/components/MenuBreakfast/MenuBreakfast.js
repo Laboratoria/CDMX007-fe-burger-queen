@@ -12,40 +12,26 @@ const MenuBreakfast = props => (
                    <div className="card-panel ">
                      <span className="card-style white-text">
                         <div className="row card-section">
+                     
                          <ul>  
                            <li className= "col l6 m6 s12 text-menu"> 
-                         <h4 className="  title-submenu">Desayunos</h4>
-                       {items.filter(item=>item.type ==='Desayuno').map(item=><p className="center">
-                      <form onSubmit={handleSendOrder}> <p> 
-                      <div><Checkbox 
-                      label={item.product}
-                       label2={item.price}
-                      handleCheckboxChange={activateCheckbox}
-                      key={item.product}
-                      type="submit"/> 
-                   </div>
-                   </p> 
-                 </form>
-                 
-                 </p>)}
+                           <h4 className="  title-submenu">Desayunos</h4>
+                            {items.filter(item=>item.type ==='Desayuno').map((item, index)=>
+                      <form className="productStyle" key={index} onSubmit={handleSendOrder}>  
+                      <Checkbox label={item.product} label2={item.price} handleCheckboxChange={activateCheckbox} key={item.product} type="submit"/> 
+                     </form>
+                )}
                  </li>
                  </ul>
                      <ul>
                       <li className ="col l6 m6 s12 text-menu">
                       <h4 className="center title-submenu" >Bebidas</h4>
-                      {items.filter(item=>item.type ==='Bebida-Desayuno').map(item=><p className="center ">
-                      <form onSubmit={handleSendOrder}> <p>
-                  <div><Checkbox 
-                      label={item.product}
-                     label2={item.price}
-                      handleCheckboxChange={activateCheckbox}
-                      key={item.product}
-                      type="submit"/> 
-                 </div></p>
-              </form>
-              
-              </p>)}
-            </li>
+                      {items.filter(item=>item.type ==='Bebida-Desayuno').map((item,index)=>
+                      <form className="productStyle" key={index} onSubmit={handleSendOrder}>
+                    <Checkbox  label={item.product} label2={item.price} handleCheckboxChange={activateCheckbox} key={item.product} type="submit"/>  
+                      </form>
+                   )}
+               </li>
            </ul>
          </div>  
             </span>     

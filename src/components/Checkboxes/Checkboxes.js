@@ -10,6 +10,7 @@ class Checkbox extends Component {
     const { handleCheckboxChange, label, label2 } = this.props;
     this.setState(({ isChecked }) => (
       {isChecked: !isChecked,}
+      
     ));
 
     handleCheckboxChange(label, label2);

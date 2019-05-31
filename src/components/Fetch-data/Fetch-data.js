@@ -6,9 +6,6 @@ import MenuBreakfast from '../MenuBreakfast/MenuBreakfast';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import OthersMenu from '../OthersMenu/OthersMenu';
 
-
-
-
 export const myFirstContext = React.createContext()
 
  
@@ -28,7 +25,7 @@ class FetchData extends Component {
     }
   }
   
-  
+  //Se realiza el fetch justo después de que el componente haya sido montado en el DOM
 componentDidMount() {
   fetch('https://burguer-queen-2efea.firebaseio.com/products.json')
     .then(res => res.json())
@@ -45,12 +42,13 @@ componentDidMount() {
   }, 1000)
 
 }
-
+//Se crea un objeto Set antes de que el componente sea montado en el DOM donde se almacenarán los
+//Elementos seleccionados. 
 componentWillMount = () => {
   this.selectedProducts = new Set();
   this.sumPrice = new Set()
 }
-
+//
 activateCheckbox = (label, label2) => {
   if (this.selectedProducts.has([label]) &&(this.selectedProduct.has([label2])) && (this.sumPrice.has([label2]))) {
     this.selectedProducts.delete([label]) 
@@ -60,7 +58,6 @@ activateCheckbox = (label, label2) => {
     this.sumPrice.add([label2])
   }
 }
-
 
 
 handleSendOrder = () => {
@@ -78,9 +75,12 @@ handleSendOrder = () => {
       this.hideElements()
       this.showElement()
  }
- 
-    createCheckbox = (label, label2) => ( <
-      Checkbox label = {
+   
+//    Función para crear dinámicamente las checkboxes. El label tomará el value de cada item del array.
+// Cada vez que el usuario selecciona o deselecciona la checkbox, llama a la función activateCheckbox.
+    
+    createCheckbox = (label, label2) => (
+    < Checkbox label = {
         label
       }
       label2 = {
@@ -91,8 +91,8 @@ handleSendOrder = () => {
       }
       key = {
         label
-      }
-      />
+      }/>
+      
     )
 
     createCheckboxes = () => (
@@ -115,7 +115,6 @@ handleSendOrder = () => {
       window.location.reload()
     )
 
-    
     handleSendKitchen=()=>(
       alert('¡Listo!, tu pedido se ha enviado a cocina.')
     )
@@ -145,14 +144,14 @@ handleSendOrder = () => {
                :null
                }      
                <div>
-             <div contentEditable='true' ref='printOrder' className="confirm-order-card"> </div>
+             <div contentEditable={true} ref='printOrder' className="confirm-order-card"> </div>
              
               {/*CARD TO CANCEL OR CONFIRM MENU*/}
              {this.state.hideElements?
               <div className="order-menu row">
              <div className="col m10 offset-m1 buttons-cancel-confirm">
-            <button className="btn-large col m3 offset-m2 col s8 offset-s2 btn-cancel" onClick={this.handleCancelOrder}><i class="fas fa-times"></i> Cancelar pedido</button>
-            <button className="btn-large col m3 offset-m2 col s8 offset-s2 btn-kitchen" onClick={this.handleSendKitchen}><i class="fas fa-check"></i> Enviar a cocina</button>
+            <button className="btn-large col m3 offset-m2 col s8 offset-s2 btn-cancel" onClick={this.handleCancelOrder}><i className="fas fa-times"></i> Cancelar pedido</button>
+            <button className="btn-large col m3 offset-m2 col s8 offset-s2 btn-kitchen" onClick={this.handleSendKitchen}><i className="fas fa-check"></i> Enviar a cocina</button>
            </div>
            </div>
              :null
