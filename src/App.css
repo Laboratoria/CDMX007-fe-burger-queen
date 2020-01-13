@@ -1,0 +1,134 @@
+body{
+  background-color: #151515;
+  height: 100vh;
+}
+
+
+
+@media only screen and (min-width : 900px) {
+  #burger-home{
+    position: absolute;
+  width: 768px;
+  height: 38px;
+  left: 0px;
+  top: 110px;
+  margin-left: 21%;
+  
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  /* or 102% */
+  
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  
+  color: #FFB400;
+  }
+  
+  #second-burger-home{
+    position: absolute;
+  width: 102px;
+  height: 45px;
+  left: 332px;
+  top: 158px;
+  margin-left: 21%;
+  
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 41px;
+  line-height: 45px;
+  /* identical to box height, or 110% */
+  
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  
+  }
+  
+  #divider{
+  position: absolute;
+  width: 56px;
+  height: 5px;
+  left: 357px;
+  top: 266px;
+  margin-left: 20%;
+
+  background: #FFB400;
+  }
+  #greeting{
+    position: absolute;
+    width: 768px;
+    height: 86px;
+    left: 0px;
+    top: 294px;
+    margin-left: 20%;
+
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+ 
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFCF4;
+    
+  }
+  #key{
+    width: 400px;
+  
+    position: absolute;
+    left:23%;
+  right: 10.94%;
+  top: 40.53%;
+  bottom: 49.61%;
+  margin-left: 20%;
+
+  
+  background: rgba(255, 255, 255, 0.11);
+  
+  position: absolute;
+  width: 599px;
+  height: 24px;
+  left: 82px;
+  top: 450px;
+  
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 48px;
+  
+  
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  
+  color: rgba(255, 255, 255, 0.39);
+  }
+  #log-in{
+    position: absolute;
+    position: absolute;
+  left: 40%;
+  top: 78.41%;
+  bottom: 14.05%;
+  margin-left: 6%;
+
+  background: #FFB400;
+  box-shadow: 0px 1px 0px #848688;
+    
+    background: #FFB400;
+    box-shadow: 0px 1px 0px #848688;
+    border: 0ch;
+  }
+  
+}

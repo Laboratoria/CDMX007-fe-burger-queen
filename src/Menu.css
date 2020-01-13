@@ -1,0 +1,586 @@
+div#navlinks{
+     padding-left: 15%;
+  }
+
+  
+  
+  a#promo.navlinks{
+    
+  width: 119px;
+  height: 23px;
+  left: 152px;
+  top: 48px;
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  }
+  
+  a#logout.navlinks.active{
+  width: 123px;
+  height: 20px;
+  left: 638px;
+  top: 49px;
+  
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 48px;
+  
+  
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  
+  color: #8D8D8D;
+  
+  }
+  
+  a.navlinks{
+  padding-left: 10%;
+  width: 119px;
+  height: 23px;
+  left: 152px;
+  top: 48px;
+  
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 48px;
+  
+  
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+  
+  }
+  
+  h1{
+    position: absolute;
+  width: 768px;
+  height: 38px;
+  left: 0px;
+  top: 113px;
+  margin-left: 19%;
+  
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 48px;
+  /* or 141% */
+  
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  }
+  
+  h2{
+    position: absolute;
+  width: 72px;
+  height: 45px;
+  left: 347px;
+  top: 149px;
+  margin-left: 19%;
+
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 29px;
+  line-height: 45px;
+  /* identical to box height, or 155% */
+  
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  }
+  
+  button.breakfast{
+ 
+position: absolute;
+width: 245px;
+height: 32px;
+left: 202px;
+top: 250px;
+
+background: #FFB400;
+  
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 0px;
+  
+  
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  
+border: 0ch;
+  }
+  
+
+  .divRender{
+  background-color: black;
+  float: left;
+  width: 31.111%;
+  height: 300px;
+  margin: 0.8%;
+  padding-bottom: 9% ;  
+  color: white;
+  text-align: right;
+  font-family: Barlow Semi Condensed;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 45px;
+
+
+
+text-transform: uppercase;
+  }
+  img{
+    width: 193px;
+    height: 193px;
+    background-size: cover;
+    margin: 20px 20px 0;
+  }
+   button.ui.button.divClick{
+     background-color: black;
+     border: none;
+   }
+
+   #modal-food{
+     background-color: #000000;
+    
+   }
+
+   #modal-food.
+   div.header{
+     background-color: #000000;
+     color:white; 
+   }
+    
+  div#additional{
+    padding-top: 28%;
+    padding-bottom: 5%;
+  }
+  
+  #meals.ui.button{
+  
+  width: 240px;
+  height: 24px;
+  left: 30px;
+  top: 280px;
+  padding-left: 20%;
+  
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 48px;
+
+  
+  text-align: center;
+  letter-spacing: 0.02em;
+  
+  
+  background-color: transparent;
+  color: #FFB400;
+  }
+  
+  #drinks.ui.button{
+    width: 193.54px;
+  height: 27px;
+  left: 286.73px;
+  top: 280px;
+  padding-left: 25%;
+  
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 48px;
+  /* or 300% */
+  
+  text-align: center;
+  text-transform: capitalize;
+  
+  background-color: transparent;
+  color: #FFFFFF;
+  }
+  
+  #additionals.ui.button{
+  width: 224.48px;
+  height: 27px;
+  left: 520.52px;
+  top: 279px;
+  padding-left: 36%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 48px;
+  
+  
+  text-align: center;
+  
+  background-color: transparent;
+  color: #FFFFFF;
+  }
+  
+  
+  
+  
+  
+  #diner{
+    position: absolute;
+  width: 247px;
+  height: 32px;
+  left: 21px;
+  top: 570px;
+  margin-top: 20%;
+  
+  background: #353535;
+  
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  }
+  
+  #takeout{
+    position: absolute;
+  width: 239px;
+  height: 32px;
+  left: 276px;
+  top: 570px;
+  margin-top: 20%;
+  margin-left: 58%;
+  background: #353535;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin-top: 20%;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  }
+  
+  #take-home{
+    position: absolute;
+  width: 222px;
+  height: 32px;
+  left: 523px;
+  top: 570px;
+  margin-top: 20%;
+  background: #353535;
+  margin-top: 20%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  }
+  
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2){
+   
+   
+    div#navlinks{
+      padding-left: 15%;
+      background-color: red;
+  
+   }
+   
+   a#promo.navlinks{
+     
+   width: 119px;
+   height: 23px;
+   left: 152px;
+   top: 48px;
+   font-family: 'Barlow', sans-serif;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 17px;
+   line-height: 48px;
+   letter-spacing: -0.01em;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   }
+   
+   a#logout.navlinks.active{
+   width: 123px;
+   height: 20px;
+   left: 638px;
+   top: 49px;
+   
+   font-family: 'Barlow', sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 48px;
+   
+   
+   text-align: center;
+   letter-spacing: -0.01em;
+   text-transform: uppercase;
+   
+   color: #8D8D8D;
+   
+   }
+   
+   a.navlinks{
+   padding-left: 10%;
+   width: 119px;
+   height: 23px;
+   left: 152px;
+   top: 48px;
+   
+   font-family: 'Barlow', sans-serif;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 17px;
+   line-height: 48px;
+   
+   
+   letter-spacing: -0.01em;
+   color: #FFFFFF;
+   
+   }
+   
+   h1{
+    padding-right: 18%;
+   width: 768px;
+   height: 38px;
+   left: 0px;
+   top: 113px;
+  
+   
+   font-family: 'Barlow Semi Condensed', sans-serif;
+   font-style: normal;
+   font-weight: 800;
+   font-size: 34px;
+   line-height: 48px;
+
+   
+   letter-spacing: 0.01em;
+   text-transform: uppercase;
+   
+   color: #FFFFFF;
+   }
+   
+   h2{
+    padding-right: 18%;
+   width: 72px;
+   height: 45px;
+   left: 347px;
+   top: 149px;
+   margin-left: 19%;
+ 
+   font-family: 'Barlow Semi Condensed', sans-serif;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 29px;
+   line-height: 45px;
+   /* identical to box height, or 155% */
+   
+   text-align: center;
+   letter-spacing: -0.04em;
+   text-transform: uppercase;
+   
+   color: #FFFFFF;
+   }
+   
+   button.breakfast{
+    margin-top: 8%;
+ position: absolute;
+ width: 245px;
+ height: 32px;
+ left: 202px;
+ top: 250px;
+ 
+ background: #FFB400;
+   
+   font-family: 'Barlow Semi Condensed', sans-serif;
+   font-style: normal;
+   font-weight: 900;
+   font-size: 21px;
+   line-height: 0px;
+   
+   
+   text-align: center;
+   text-transform: uppercase;
+   color: #000000;
+   
+ border: 0ch;
+   }
+   
+ 
+   .divRender{
+   background-color: black;
+   float: left;
+   width: 31.111%;
+   height: 300px;
+   margin: 0.8%;
+   padding-bottom: 9% ;  
+   color: white;
+   text-align: right;
+   font-family: Barlow Semi Condensed;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 14px;
+ line-height: 45px;
+ 
+ 
+ 
+ text-transform: uppercase;
+   }
+   img{
+     width: 150px;
+     height: 150px;
+     background-size: cover;
+     margin: 20px 20px 0;
+   }
+    button.ui.button.divClick{
+      background-color: black;
+      border: none;
+    }
+     
+   div#additional{
+    
+     padding-bottom: 5%;
+     padding-top: 40%
+   }
+   
+   #meals.ui.button{
+   
+   width: 240px;
+   height: 24px;
+   left: 30px;
+   top: 280px;
+   padding-left: 20%;
+   
+   font-family: 'Roboto Condensed', sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 48px;
+ 
+   
+   text-align: center;
+   letter-spacing: 0.02em;
+   
+   
+   background-color: transparent;
+   color: #FFB400;
+   }
+   
+   #drinks.ui.button{
+     width: 193.54px;
+   height: 27px;
+   left: 286.73px;
+   top: 280px;
+   padding-left: 25%;
+   
+   font-family: 'Roboto Condensed', sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 48px;
+   /* or 300% */
+   
+   text-align: center;
+   text-transform: capitalize;
+   
+   background-color: transparent;
+   color: #FFFFFF;
+   }
+   
+   #additionals.ui.button{
+   width: 224.48px;
+   height: 27px;
+   left: 520.52px;
+   top: 279px;
+   padding-left: 36%;
+   font-family: 'Roboto Condensed', sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 48px;
+   
+   
+   text-align: center;
+   
+   background-color: transparent;
+   color: #FFFFFF;
+   }
+   
+   
+   
+   
+   
+   #diner{
+     position: absolute;
+   width: 247px;
+   height: 32px;
+   left: 21px;
+   top: 570px;
+   margin-top: 20%;
+   
+   background: #353535;
+   
+   text-align: center;
+   letter-spacing: 0.01em;
+   text-transform: uppercase;
+   
+   color: #FFFFFF;
+   }
+   
+   #takeout{
+     position: absolute;
+   width: 239px;
+   height: 32px;
+   left: 276px;
+   top: 570px;
+   margin-top: 20%;
+   margin-left: 58%;
+   background: #353535;
+   text-align: center;
+   letter-spacing: 0.01em;
+   margin-top: 20%;
+   text-transform: uppercase;
+   
+   color: #FFFFFF;
+   }
+   
+   #take-home{
+     position: absolute;
+   width: 222px;
+   height: 32px;
+   left: 523px;
+   top: 570px;
+   margin-top: 20%;
+   background: #353535;
+   margin-top: 20%;
+   text-align: center;
+   letter-spacing: 0.01em;
+   text-transform: uppercase;
+   
+   color: #FFFFFF;
+   }
+  }  
+
+
+ 
