@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Economica');
+
+
+p{
+    color: #7cccf3;
+    font-family:'Economica', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-left: 22%;
+}
+
+h2{
+    color: #7cccf3;
+    font-family:'Economica', sans-serif;
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 0%
+}
+h3{
+    color: #707070;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    margin-right: 4%;
+    margin-left: 0%;
+}
+hr{
+    width: 75%
+}
+#container-category{
+    background-color: #f8d554;
+    width: 22%;
+    height: 700px;
+}
+#container-category p{
+    color: #707070;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin-right: 4%;
+    margin-left: 0%;
+}
+#breakfast{
+    padding-top: 85%;
+}
+#exit{
+    position: relative;
+    float: right;
+    height: 40px;
+    margin-top:25%;
+}
+#logo-container{
+    position: relative;
+    width: 38%;
+    height: 50%;
+    float: right;
+    margin-top: -89%;
+    right: 32%;
+
+}
+#logo-category{
+    position: relative;
+    width:100%;
+    height: 100%;
+
+}
+#section-name{
+    position: relative;
+    float: right;
+    right: 43%;
+    margin-top: -67%;
+}
+#name-client{
+    position: relative;
+    float: right;
+    margin-top: -17%;
+    right: -38%;
+    width: 153%;
+    height: 70%;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    border: solid 2px #C4C5C7;
+    border-radius: 20px;
+}
+.products-container{
+    background-color: #edf5f9;
+    position: relative;
+    width: 46%;
+    float: left;
+    margin-top: -72%;
+    margin-left: 26%;
+    height: auto; 
+}
+.imagen-producto{
+    position: relative;
+    margin-left: 35%;
+    margin-bottom: 5%;
+    margin-top: 6%;
+}
+.producto-hamburguer{
+    background-color: #acb8bf ;
+    width: 29%;
+    height: auto;
+    display: inline-block;
+    margin: 2%;
+    border-radius: 6%;
+}
+.producto-hamburguer:hover{
+    background-color: #d9e3e6;
+}
+.producto-hamburguer p{
+    color:#707070;
+    font-family:'Economica', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin:1%;
+    padding:1px;
+
+}
+.container-extras{
+    position: relative;
+    float: right;
+    display: block;
+    width: 100%;
+}
+.extras-main{
+    margin: 1%;
+    display: inline-block;
+    margin-left: 42%;
+}
+.extras-main p{
+    color: #7cccf3;
+    font-family:'Economica', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 0%;
+}
+.extras{
+    margin: 1%;
+    display: inline-block;
+    margin-left: 6%;
+}
+.extras p{
+    color: #7cccf3;
+    font-family:'Economica', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 0%;
+}
+@media (max-width:800px){
+    .products-container{
+        margin-top: -69%;
+    }
+    #logo-container{
+        margin-top: -88%
+    }
+    h2{
+        font-size: 2em;
+        margin:3%;
+    }
+    .producto-hamburguer p{
+        font-size: 1em;
+    }
+    .extras-main p{
+        font-size: 1em;
+    }
+    .extras{
+        font-size: 1.6em;  
+    }
+    .extras p{
+        margin-left: -24%;
+        font-size: 0.6em;
+    }
+}
+@media(min-width:1000px){
+    .products-container{
+        margin-top: -1%;
+    }
+    #logo-container{
+        margin-top: 6%
+    }
+    #logo-category{
+        width:70%;
+        margin-left: 14%;
+    }
+    .container-extras{
+        margin-right: -21%
+    }
+    .extras{
+        margin-left:3%;
+    }
+    .extras p{
+        font-size: 1.3em;
+        margin-left: -20%;
+    }
+    .extras-main p{
+        font-size: 1.3em
+    }
+}
+@media(min-width:1200px){
+    h2{
+        font-size:2.7em;
+    }
+    .products-container{
+        margin-top: 3%;
+    }
+    #logo-container{
+        margin-top: 6%;
+    }
+    #logo-category{
+        width: 70%;
+        margin-left: 6%;
+    }
+    .container-extras{
+        margin-top: 8%;
+        margin-right: -23%;
+    }
+    .extras-main p{
+        font-size: 2em;
+        margin-left: 0%;
+       
+    }
+    .extras p{
+        font-size: 2em;
+        margin-left: -30%;
+    }
+    .extras{
+        margin-left: 2%
+    }
+    .producto-hamburguer p {
+        font-size: 1.7em;
+    }
+}

@@ -1,0 +1,27 @@
+<section id="logo-container">
+  <img id="logo-category" src="../assets/images/BurgerQueen.png">
+</section>
+<section  class="products-container">
+  <h2>B E B I D A S</h2>
+  <div class= "container-bebidas">
+  <div *ngFor = "let bebida of bebidas; let i= index" (click)="searchProduct(i)" class="producto-hamburguer">
+      <img class="imagen-producto" [src]="bebida.imagen">
+      <p>{{bebida.nombre}}</p>
+      <p>$ {{bebida.precio}}</p>
+  </div>
+ </div>
+  <div class="container-extras">
+    <div class="extras-main">
+      <a [routerLink]="['/extras']"><img src='../../../assets/images/lote/egg-1.png'></a>
+      <p>Extras</p>
+    </div>
+    <div class="extras">
+      <a [routerLink]="['/guarnicion']"><img src='../../../assets/images/lote/french-fries-1.png'></a>
+      <p>Guarnición</p>
+    </div>
+    <div class="extras">
+      <a [routerLink]="['/hamburguesas']"><img src='../../../assets/images/lote/burger-1.png'></a>
+      <p>Hamburguesas</p>
+    </div>
+  </div>
+</section>

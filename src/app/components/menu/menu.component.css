@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Economica');
+
+#container{
+    margin: 0%;
+}
+
+#container-menu{
+    width: 100%;
+    height: 100%;
+}
+p{
+    color: #7cccf3;
+    font-family:'Economica', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-left: 22%;
+}
+
+h1{
+    color: white;
+    font-size: 1.5em;
+    font-family:'Economica', sans-serif;
+    text-align: center
+}
+h2{
+    color: #7cccf3;
+    font-family:'Economica', sans-serif;
+    font-size: 2em;
+    text-align: left;
+}
+h3{
+    color: #707070;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    margin-right: 4%;
+    margin-left: 0%;
+}
+#section-name{
+    position: relative;
+    float: right;
+    right: 43%;
+    margin-top: -67%;
+}
+
+
+#container-category{
+    background-color: #f8d554;
+    width: 22%;
+    height: 700px;
+}
+#container-category p{
+    color: #707070;
+    font-family:'Economica', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin-right: 4%;
+    margin-left: 0%;
+}
+#container-category hr{
+    color: #707070;
+    width: 75%;
+}
+#breakfast{
+    padding-top: 85%;
+}
+#exit{
+    position: relative;
+    float: right;
+    height: 40px;
+    margin-top: 39%;
+}
+#logo-container{
+    position: relative;
+    width: 38%;
+    height: 50%;
+    float: right;
+    margin-top: -87%;
+    right: 32%;
+
+}
+#logo-category{
+    position: relative;
+    width:100%;
+    height: 100%;
+
+}
+#name-client{
+    position: relative;
+    float: right;
+    margin-top: -17%;
+    right: -38%;
+    width: 153%;
+    height: 70%;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    border: solid 2px #C4C5C7;
+    border-radius: 20px;
+}
+.products-container{
+    background-color: #edf5f9;
+    position: relative;
+    width: 46%;
+    float: left;
+    margin-top: -70%;
+    margin-left: 26%;
+    height: auto; 
+}
+.producto{
+    background-color: #d9e3e6;
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    margin: 2%;
+    border-radius: 6%;
+}
+.producto p{
+    color:#707070;
+    font-family:'Economica', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin:1%;
+    padding:1px;
+
+}
+.imagen-producto{
+    position: relative;
+    margin-left: 35%;
+    margin-bottom: 5%;
+    margin-top: 6%;
+}
+.producto-hamburguer{
+    background-color: #d9e3e6;
+    width: 29%;
+    height: auto;
+    display: inline-block;
+    margin: 2%;
+    border-radius: 6%;
+}
+.producto-hamburguer p{
+    color:#707070;
+    font-family:'Economica', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin:1%;
+    padding:1px;
+
+}

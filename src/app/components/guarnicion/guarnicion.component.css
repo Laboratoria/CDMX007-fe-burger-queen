@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Economica');
+
+
+p{
+    color: #7cccf3;
+    font-family:'Economica', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin-left: 22%;
+}
+
+h2{
+    color: #7cccf3;
+    font-family:'Economica', sans-serif;
+    font-size: 2em;
+    text-align: left;
+}
+h3{
+    color: #707070;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+    margin-right: 4%;
+    margin-left: 0%;
+}
+hr{
+    width: 75%
+}
+#container-category{
+    background-color: #f8d554;
+    width: 22%;
+    height: 700px;
+}
+#container-category p{
+    color: #707070;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin-right: 4%;
+    margin-left: 0%;
+}
+#breakfast{
+    padding-top: 85%;
+}
+#exit{
+    position: relative;
+    float: right;
+    height: 40px;
+    margin-top:25%;
+}
+#logo-container{
+    position: relative;
+    width: 38%;
+    height: 50%;
+    float: right;
+    margin-top: -89%;
+    right: 32%;
+
+}
+#logo-category{
+    position: relative;
+    width:100%;
+    height: 100%;
+
+}
+#section-name{
+    position: relative;
+    float: right;
+    right: 43%;
+    margin-top: -67%;
+}
+#name-client{
+    position: relative;
+    float: right;
+    margin-top: -17%;
+    right: -38%;
+    width: 153%;
+    height: 70%;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    border: solid 2px #C4C5C7;
+    border-radius: 20px;
+}
+.products-container{
+    background-color: #edf5f9;
+    position: relative;
+    width: 46%;
+    float: left;
+    margin-top: -72%;
+    margin-left: 26%;
+    height: auto; 
+}
+.imagen-producto{
+    position: relative;
+    margin-left: 35%;
+    margin-bottom: 5%;
+    margin-top: 6%;
+}
+.producto-hamburguer{
+    background-color:#acb8bf ;
+    width: 46%;
+    height: auto;
+    display: inline-block;
+    margin: 2%;
+    border-radius: 6%;
+}
+.producto-hamburguer:hover{
+    background-color:#d9e3e6 ;
+}
+.producto-hamburguer p{
+    color:#707070;
+    font-family:'Economica', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin:1%;
+    padding:1px;
+
+}
+.container-extras{
+    position: relative;
+    float: right;
+    margin-top:19%;
+}
+.extras-main{
+    margin: 1%;
+    display: inline-block;
+    margin-left: -19%;
+}
+.extras-main p{
+    color: #7cccf3;
+    font-family:'Economica', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 0%;
+}
+.extras{
+    margin: 1%;
+    display: inline-block;
+    margin-left: 6%;
+}
+.extras p{
+    color: #7cccf3;
+    font-family:'Economica', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    margin: 0%;
+    margin-left: -14%;
+}
+@media (max-width:800px){
+    h2{
+        font-size: 2em;
+    }
+    .products-container{
+        margin-top: -67%;
+
+    }
+    #logo-container{
+        margin-top: -87%;
+
+    }
+    .producto-hamburguer p{
+        font-size: 1em;
+    }
+    .container-extras{
+        margin-top: 12%;
+    }
+    .extras-main p{
+        font-size: 1em;
+        margin-right: 13%;
+    }
+    .extras p{
+        font-size: 1em;
+    }
+}
+@media(min-width:1000px){
+    .products-container{
+        margin-top: 0%;
+    }
+    #logo-container{
+        margin-top: 6%;
+    }
+    #logo-category{
+        width: 75%;
+        margin-left: 11%;
+    }
+    .producto-hamburguer p{
+        font-size: 1.3em;
+    }
+    .imagen-producto{
+        margin-left: 42%;
+    }
+    .container-extras{
+        margin-top: 10%;
+        margin-right: -11%
+    }
+    .extras p{
+        font-size: 1.3em;
+        margin-left: -29%;
+    }
+    .extras-main p{
+        font-size: 1.3em;
+    }
+}
+@media(min-width:1200px){
+    h2{
+        font-size: 3em;
+    }
+    .products-container{
+        margin-top: 4%
+    }
+    #logo-container{
+        margin-top: 6%
+    }
+    #logo-category{
+        width:70%;
+        margin-left: 6%;
+    }
+    .producto-hamburguer p{
+        font-size: 1.9em;
+    }
+    .extras-main p{
+        font-size: 2em;
+    }
+    .extras p{
+        font-size: 2em;
+        margin-left: -33%;
+    }
+    .container-extras{
+        margin-top: 14%;
+        margin-right: -6%
+    }
+}

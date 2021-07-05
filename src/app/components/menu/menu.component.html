@@ -1,0 +1,15 @@
+<div id='container'>
+
+ <div id="container-menu">
+    <section id="logo-container">
+        <img id="logo-category" src="../assets/images/BurgerQueen.png">
+    </section>
+        <section *ngIf="mostrar" id="section-name">
+        <p> NOMBRE </p>
+         <input  id="name-client" type="text" placeholder="Nombre de Cliente" (keyup.enter)="onKey($event)" [(ngModel)]="client.name"  > 
+        </section> 
+        <app-productos *ngIf = "!mostrar"></app-productos>
+        <!-- <input type="text" placeholder="Nombre de Cliente"></input> -->  
+       
+   </div>
+</div>

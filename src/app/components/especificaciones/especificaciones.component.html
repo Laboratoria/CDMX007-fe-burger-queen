@@ -1,0 +1,12 @@
+<section id="logo-container">
+  <img id="logo-category" src="../assets/images/BurgerQueen.png">
+</section>
+<section  class="products-container">
+  <h2>E S P E C I F I C A C I O N E S</h2>
+  <div *ngFor = "let ingrediente of especificaciones; let i = index " class="producto-hamburguer" (click)="especial(i)">
+      <img class="imagen-producto" [src]="ingrediente.imagen">
+      <p>{{ingrediente.nombre}}</p>
+      <p>{{ingrediente.precio}}</p>
+  </div>
+  
+</section>

@@ -1,0 +1,83 @@
+p{
+    color: #707070;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin-right: 4%;
+    margin-left: 0%;
+}
+hr{
+    width: 75%;
+}
+#container-category{
+    background-color: #f8d554;
+    width: 22%;
+    
+}
+#breakfast{
+    padding-top: 94%;
+}
+ p:hover{
+     /* color:#acb8bf; */
+     font-size: 1.8em;
+     text-decoration: underline;
+    
+ }
+ 
+#exit{
+    position: relative;
+    float: right;
+    height: 40px;
+    margin-top: 22%;
+    
+    
+}
+@media(min-width:750px )and (max-width:990px){
+    #container-category{
+        height: 680px;
+    }
+    .products-container{
+        margin-top:56%;
+    }
+    #logo-container{
+        margin-top: -75%;
+    }
+}
+@media (min-width: 1000px){
+    p{
+        font-size: 1.8em;
+    }
+    #exit{
+        width: 25%;
+        height: 10%;
+        margin-top: 13%;
+    }
+    #container-category{
+        height: 100vh;
+        position: fixed;
+        float: left;
+    }
+    p:hover{
+        font-size: 2.3em;
+    }
+    #breakfast{
+        padding-top: 94%;
+    }
+
+}
+
+@media(min-width:1200px) and (max-width:1500px){
+    p{
+        font-size: 2.5em;
+    }
+    #container-category{
+        height: 100vh;
+    }
+    #breakfast{
+        padding-top: 90%;
+    }
+    p:hover{
+        font-size: 2.7em;
+    }
+    
+}

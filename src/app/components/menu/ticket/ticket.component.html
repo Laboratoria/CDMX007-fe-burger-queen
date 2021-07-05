@@ -1,0 +1,22 @@
+<section id="ticket-container">
+    <h1>TICKET</h1>
+    <p>{{_inputService.inputValue}}</p>
+    <hr>
+    <!-- <p>{{_ticketService.productTicket | json}}</p> -->
+    <div  *ngFor="let producto of _ticketService.productArray; let i ='index' ">
+    <h3>{{producto.cantidad}}</h3>
+    <h3>${{producto.valor}}</h3>
+    <h2>{{producto.nombre}}</h2><br>
+    <img (click)="objeto(i)"class="quitar" [src]="producto.eliminar">
+   </div>
+   <div class="total-count" *ngIf="totalCount(_ticketService.productArray)">
+       <h4>${{sum}}.00</h4>
+   </div>
+  
+</section>
+<section>
+    <div class="confirmar">
+        <img [routerLink]="['/cancelacion']" (click)="cancelar()" class ="confirmar-img"src="../../../../assets/images/lote/Cancelar orden-15.png">
+        <img [routerLink]="['/confirmacion']"(click)="firebaseConfirmate();cancelar()" class ="confirmar-img"src="../../../../assets/images/lote/Confirmar-16.png">
+    </div>
+</section>
